@@ -21,6 +21,7 @@ header {
 }
 
 
+
 nav {
     background-color: #495057;
     display: flex;
@@ -38,16 +39,15 @@ ul li {
     gap: 6rem;
     display: flex;
     justify-content: center;
-    color: #e5e5e5;
 }
 
-a {
+
+a  {
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: #e5e5e5;
 }
-
 
 
 
@@ -61,15 +61,7 @@ a {
 
 
 
-.redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 13px;
-    gap: 7px;
-    color: #111111;
-    font-family: garamond;
-}
+
 
 
 
@@ -318,6 +310,17 @@ footer h2 {
     align-items: flex-end;
 
 }
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    gap: 7px;
+    color: #111111;
+}
+
 
 
 footer a {
