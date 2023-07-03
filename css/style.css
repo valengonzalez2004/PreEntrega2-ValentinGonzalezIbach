@@ -403,7 +403,7 @@ footer a {
     }
 
     .parrafop {
-        font-size: 70%;
+        font-size: 90%;
         padding: 1em;
     }
 
@@ -415,7 +415,7 @@ footer a {
 
     .imagen {
         border: none;
-        width: 25%;
+        width: 25%;padding-top: 1em;
     }
 
 
