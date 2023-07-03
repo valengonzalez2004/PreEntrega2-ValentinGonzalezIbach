@@ -388,22 +388,34 @@ footer a {
     }
 
     .noticia {
-        padding: 0.5rem;
-        margin-top: 4rem;
+        width: 100%;
+        height: 100%;
     }
 
     .ellos {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 1rem;
+        text-align: center;
+        
+    }
+
+    .parrafop {
+        font-size: 70%;
+        padding: 1em;
+    }
+
+    .titulon {
+        block-size: 10%;
+
     }
 
 
     .imagen {
         border: none;
-        width: 14px;
-        height: 14px;
+        width: 25%;
     }
 
 
