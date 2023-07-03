@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #111111;
+    background-color: #e5e5e5;
+    font-family: garamond;
+
+}
+
+.logoo-png {
+    display: flex;
+    text-align: center;
+    height: 170px;
+    width: 150px;
+
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    color: #111111;
+    width: 80;
+    margin: 0 auto
+}
+
+header a {
+    color: #111111;
+    font-family: garamond;
+    text-decoration: none;
+}
+
+
+.buscador {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+
+}
+
+
+
+.redes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 13px;
+    gap: 7px;
+    color: #111111;
+    font-family: garamond;
+}
+
+
+
+
+/* ++++++HEADER+++++ */
+
+
+
+section h2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.binos {
+    display: flex;
+    justify-content: center;
+}
+
+
+.todo-oscuro {
+    background-color: #111111;
+}
+
+
+.titulon {
+    color: #111111;
+}
+
+
+
+
+/*++++ APARTADO SOBRE NOSOTROS  */
+
+
+
+
+.noticia {
+    background-color: #e5e5e5;
+    background-size: 100%;
+    width: 1900px;
+    height: 560px;
+    border: groove 0px #e5e5e5;
+    color: #111111;
+}
+
+.presentacion  {
+    color: #111111;
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+
+.parrafop {
+    display: flex;
+    align-items: center;
+    color: #111111;
+    font-size: 20px;
+}
+
+.titulon {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*++++ FIN APARTADO SOBRE NOSOTROS ++++*/
+
+
+
+main p {
+    color: #e5e5e5;
+    /* font-family: Microsoft Sans Serif; */
+    font-family: Optima;
+}
+
+
+h2 {
+    font-family: Goudy Old Style;
+    color: #e5e5e5;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e5e5e5;
+}
+
+.formulario {
+    color: #e5e5e5;
+}
+
+
+
+.notticia {
+    color: white;
+}
+
+/* a {
+    text-decoration: none;
+    color: white;
+} */
+
+.contacto {
+    color: white
+}
+
+
+h3 {
+    color: white;
+}
+
+
+
+
+.lanotticia2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 3rem;
+    color: #e5e5e5;
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    padding-right: 10em;
+    font-size: 25px;
+}
+
+.otherinfo {
+    display: flex;
+    align-items: center;
+    padding-left: 10em;
+    font-size: 25px;
+}
+
+
+.ubicacion {
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* +++++++FOOTER++++++++ */
+
+
+
+
+
+
+.footer {
+    background-color: #e5e5e5;
+    color: #111111;
+}
+
+
+footer h2 {
+    /* display: flex;
+    justify-content: center;
+    justify-items: center; */
+    color: #111111;
+}
+
+
+footer a {
+    color: #111111;
+    text-decoration: none;
+
+}
+
+/*++++´RESPOONSIVE++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*++++ CONTACTO ++++*/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto {
+    color: #e5e5e5
+}
+
+.consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: space-around;
+}
+
+.atencionalcliente {
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.2rem;
+}
