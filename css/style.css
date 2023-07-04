@@ -76,16 +76,99 @@ section h2 {
     padding: 2rem;
 }
 
-.promociones{
+.promos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     justify-content: space-around;
+    gap: 2rem;
+}
+
+.foto {
+    background-color: #111111;
+    padding: 1.9rem;
+    border-radius: 10rem;
+    width: 100%;
+    height: 100%;
+}
+
+.largo {
+    background-color: #e5e5e5;
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.tarjeta h3 {
+    color: #111111;
+    text-align: center;
+    width: 100%;
+}
+
+.card-text {
+    color: #111111;
+    text-align: center;
+}
+
+.largo-2 {
+    background-color: #e5e5e5;
     width: 100%;
 }
 
 
-.binos {
+.todo-oscuro {
+    background-color: #111111;
+} 
+
+.boton {
+    background-color: #111111;
+    color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.boton-2 {
+    background-color: #111111;
+    color: #e5e5e5;
+
+}
+
+
+.boton-3 {
+    background-color: #111111;
+    color: #e5e5e5;
+}
+
+.expansion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.expansion-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.expansion-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* ++++PROBANDO++++ */
+
+
+
+
+/* .binos {
     border: solid #e5e5e5;
     width: 30%;
 }
@@ -93,6 +176,10 @@ section h2 {
 .binos {
     width: 100%;
 }
+
+
+
+
 
 .tarjeta-body {
     border: solid #e5e5e5;
@@ -106,6 +193,8 @@ section h2 {
 .tarjeta-body {
     width: 100%; 
     }
+    
+    
 
 .oferta2 {
     border: solid #e5e5e5;
@@ -139,14 +228,11 @@ section h2 {
 
 
 
-.todo-oscuro {
-    background-color: #111111;
-}
 
 
 .titulon {
     color: #111111;
-}
+} */
 
 
 
@@ -163,31 +249,34 @@ section h2 {
 
 
 .noticia {
-    background-image: url(../images/fondo2.jpg);
+    /* background-image: url(../images/fondo2.jpg); */
+    background-color: #e5e5e5;
     background-size: 100%;
-    width: 100%;
-    height: 560px;
-    border: groove 0px #e5e5e5;
-    color: #111111;
+    width: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .imagen {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: solid 10px;
-    border-color: #e5e5e5;
 }
 
 .parrafop {
+    color: #111111;
     text-align: center;
     font-size: 20px;
 
 }
 
+.ellos {
+    color: #111111;
+}
 
 .titulon {
-    color: #e5e5e5;
+    color: #111111;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -198,10 +287,16 @@ section h2 {
 /*++++ FIN APARTADO SOBRE NOSOTROS ++++*/
 
 .video {
-    display: flex;
+    /* display: flex;
     align-items: center;
+    justify-content: start; */
+    display: grid;
+    grid-template-columns: 25% 25%;
     justify-content: center;
-    font-size: 26px;
+    padding:  3rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
 
 }
 
@@ -235,7 +330,10 @@ h1 {
 
 
 
+.parrafop-2 {
+    color: #e5e5e5;
 
+}
 
 .contacto {
     color: white
@@ -429,7 +527,11 @@ footer a {
 
 /*++++´RESPOONSIVE++++*/
 
-@media(max-width:480px) {
+@media (max-width:480px) {
+
+    header {
+        width: 100%;
+    }
 
     nav {
         display: flex;
@@ -444,48 +546,27 @@ footer a {
         gap: 1rem;
     }
 
-    .promociones {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-    }
-
-    .tamaño{
-        width: 100%;
-    }
-
-    .binos {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .binos{
-        width: 100%;
-    }
-
-    .tarjeta-body {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .tamaño-2 {
-        width: 100%;
-    }
 
 
-    .tamaño-3{
-        width: 100%;
-    }
+.promos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.largo {
+    width: 100%;
+    height: 100%;
+}
+
+
 
     .noticia {
         width: 100%;
         height: 100%;
     }
+
 
     .ellos {
         width: 100%;
@@ -500,6 +581,7 @@ footer a {
     .parrafop {
         font-size: 90%;
         padding: 1em;
+        font-size: 20px;
     }
 
     .titulon {
@@ -510,15 +592,17 @@ footer a {
 
     .imagen {
         border: none;
-        width: 25%;padding-top: 1em;
+        width: 25%;
+        padding-top: 1em;
     }
 
+    .video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.video {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
 footer {
     display: flex;
@@ -565,5 +649,56 @@ footer {
 }
 
 
+@media (max-width:1200px) {
+
+    header {
+        width: 100%;
+    }
+
+    .promociones {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.5em;
+    }
+
+    .tamaño{
+        width: 100%;
+    }
+
+    .binos {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .binos{
+        width: 100%;
+    }
+
+    .tarjeta-body {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tamaño-2 {
+        width: 100%;
+    }
+
+
+    .tamaño-3{
+        width: 100%;
+    }
+
+    .video {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 23px;
+    }
+
+
+    
+}
 
 
