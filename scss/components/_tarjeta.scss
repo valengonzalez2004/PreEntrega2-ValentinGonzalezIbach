@@ -1,0 +1,97 @@
+.promos {
+    @include flexbox;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+
+    @include mobile {
+        @include flex2;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .foto {
+        background-color: #494949;
+        padding: 2.8rem;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+
+div .largo {
+    background-color: $color-fondo-letras;
+    width: 100%;
+
+
+
+    &-2 {
+        background-color: $color-fondo-letras;
+        width: 100%;
+
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+    .card-body {
+        text-align: center;
+        font-family: lato sans-serif;
+
+        &-title {
+            color: $color-fondox2-letras;
+            text-align: center;
+            width: 100%;
+
+
+        }
+    }
+
+    .expansion {
+        @include flexbox;
+        flex-direction: row;
+
+        .boton {
+            background-color: $color-fondox2-letras;
+            color: $color-fondo-letras;
+            @include flexbox;
+            flex-direction: row;
+            justify-content: right;
+
+        }
+    }
+
+    .expansion-2 {
+        @include flexbox;
+        flex-direction: row;
+
+        .boton-2 {
+            background-color: $color-fondox2-letras;
+            color: $color-fondo-letras;
+        }
+    }
+
+    .expansion-3 {
+        @include flexbox;
+        flex-direction: row;
+
+        .boton-3 {
+            background-color: $color-fondox2-letras;
+            color: $color-fondo-letras;
+        }
+    }
+
+
+    .card-text {
+        color: $color-fondox2-letras;
+        text-align: center;
+    }
+    
+
+
+    

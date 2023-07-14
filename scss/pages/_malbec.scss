@@ -1,0 +1,162 @@
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+
+.malbec-venta {
+    gap: 3rem;
+    @include flex2;
+
+
+    .foto-malbec2 {
+        display: flex;
+        background-color: #454545;
+        justify-content: center;
+    }
+
+}
+
+div .otro-largo {
+    background-color: $color-fondo-letras;
+    width: 100%;
+
+    @include mobile {
+        width: 99%;
+    }
+
+    &-2 {
+        background-color: $color-fondo-letras;
+        width: 100%;
+
+        .filas-malbec {
+            @include flex2;
+
+        }
+
+    }
+
+}
+
+.card-body2 {
+    text-align: center;
+    font-family: lato sans-serif;
+    width: 100%;
+
+    .card-text2 {
+        color: $color-fondox2-letras;
+
+
+        &-title2 {
+            color: $color-fondox2-letras;
+
+            text-align: center;
+            width: 100%;
+
+            @include mobile {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+.malbec-expansion {
+    @include flexbox;
+    flex-direction: row;
+    padding: 0.5rem;
+
+    .malbec-boton {
+        background-color: $color-fondox2-letras;
+        color: $color-fondo-letras;
+        @include flexbox;
+        justify-content: right;
+
+        @include mobile{
+            width: 100%;
+            justify-content: center
+        }
+    }
+}
+
+.malbec-expansion-2 {
+    @include flexbox;
+    flex-direction: row;
+    padding: 0.5rem;
+
+    .malbec-boton-2 {
+        background-color: $color-fondox2-letras;
+        @include flexbox;
+        color: $color-fondo-letras;
+
+        @include mobile {
+            width: 100%;
+            
+        }
+
+    }
+}
+
+
+.tres {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 4rem;
+
+    @include mobile {
+        width: 99%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        @include flexbox;
+
+    }
+}
+
+.cuatro {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 4rem;
+
+    @include mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.5rem;
+    }
+}
+
+.imgvistandes {
+    width: 302px;
+
+    @include mobile {
+        width: 116px;
+    }
+}
+
+
+.ocho {
+    text-align: center;
+    font-family: lato sans-serif;
+    width: 100%;
+
+    @include mobile {
+        width: 110px;
+        text-align: center;
+    }
+}
+
+.tarjeta {
+    width: 100%;
+
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+}

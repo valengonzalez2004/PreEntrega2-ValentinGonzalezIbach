@@ -1,0 +1,120 @@
+$color-fondo-letras:#e5e5e5;
+$color-fondox2-letras:#111111;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+@mixin inline($display:inline, $align:space-between){
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexbox($justify:center, $direction:row, $align:center){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex2($justify:center, $direction:column){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin flex3($justify:center, $direction:column){
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+
+}
+
+@mixin grid1($justify:center, $direction:column){
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25%;
+
+}
+
+@mixin grid($justify:center, $direction:column){
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 25%);
+    width: 100%;
+
+}
+
+.todo-oscuro{
+    background-color: $color-fondox2-letras;
+}
+
+h2{
+    font-family: serif;
+    color: $color-fondo-letras;
+    gap: 0.5;
+}
+
+.precios {
+    color: $color-fondo-letras;
+    padding: 1rem;
+}
+
+main p{
+    color: $color-fondo-letras;
+    font-family: optima;
+}
+
+article p{
+    color: $color-fondox2-letras;
+}
+
+.articulos{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+footer h2{
+    color: $color-fondox2-letras;
+}
+
+
+
+
+.uno {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 4rem;
+}
+
+
+
+
+@mixin mobile {
+    @media (max-width: 420px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width:1200px){
+        @content;
+    }
+}
+

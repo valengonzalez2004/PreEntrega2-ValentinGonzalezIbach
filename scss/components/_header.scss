@@ -1,0 +1,129 @@
+header {
+    color: $color-fondox2-letras;
+    background-color: $color-fondo-letras;
+
+    @include mobile {
+        width: 100%;
+
+    }
+
+    .logoo-png {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 170px;
+        width: 150px;
+    }
+}
+
+
+
+.linea {
+    @include inline;
+
+    @include mobile {
+        width: 100%;
+        @include flex2;
+        width: 100%;
+
+
+    }
+
+
+
+    nav {
+        background-color: $color-fondo-letras;
+        @include flexbox;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+        font-family: garamond;
+
+        @include mobile {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+
+        ul {
+            display: inline-block;
+            @include flexbox;
+            gap: 3rem;
+
+            @include mobile {
+                width: 100%;
+                @include flex2;
+                align-items: center;
+                padding: 3rem;
+                gap: 2rem;
+            }
+
+            li {
+                list-style: none;
+                padding: 0 10px;
+
+
+                a {
+                    @include flexbox;
+                    text-decoration: none;
+                    color: $color-fondox2-letras;
+
+                    @include mobile {
+                        width: 100%;
+                        @include flex2;
+                    }
+
+                    &:hover {
+                        color: #494949;
+
+                        @include mobile {
+                            width: 100%;
+                            @include flex2;
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+.mover {
+    display: inline;
+    @include flex2;
+    align-items: center;
+    align-items: end;
+    width: 20%;
+
+    @include mobile {
+        @include flex2;
+        gap: 2rem;
+    }
+
+    .bi-cart-fill {
+        display: inline-block;
+        width: 20%;
+        height: 20%;
+        color: $color-fondox2-letras;
+
+        @include mobile {
+            @include flexbox;
+            padding: 0.5rem;
+            color: $color-fondox2-letras;
+
+        }
+
+        &:hover {
+            color: #454545;
+        }
+    }
+
+
+}

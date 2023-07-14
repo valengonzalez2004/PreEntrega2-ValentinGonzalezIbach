@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-oscuro {
+  background-color: #111111;
+}
+
+h2 {
+  font-family: serif;
+  color: #e5e5e5;
+  gap: 0.5;
+}
+
+.precios {
+  color: #e5e5e5;
+  padding: 1rem;
+}
+
+main p {
+  color: #e5e5e5;
+  font-family: optima;
+}
+
+article p {
+  color: #111111;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+header {
+  color: #111111;
+  background-color: #e5e5e5;
+}
+header .logoo-png {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 170px;
+  width: 150px;
+}
+
+.linea {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+}
+.linea nav {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  justify-content: end;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+  font-family: garamond;
+}
+.linea nav ul {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.linea nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+.linea nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #111111;
+}
+.linea nav ul li a:hover {
+  color: #494949;
+}
+
+.mover {
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: end;
+  width: 20%;
+}
+.mover .bi-cart-fill {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  color: #111111;
+}
+.mover .bi-cart-fill:hover {
+  color: #454545;
+}
+
+footer {
+  background-color: #e5e5e5;
+}
+footer h2 {
+  color: #111111;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  color: #111111;
+  font-family: lato sans-serif;
+}
+
+.junte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.junte .footer-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  padding: 0.5em;
+}
+.junte .footer-2 a {
+  color: #111111;
+  text-decoration: none;
+}
+.junte .footer-2 a:hover {
+  color: #454545;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 13px;
+  gap: 7px;
+  color: #111111;
+}
+.redes a {
+  color: #111111;
+}
+.redes a:hover {
+  color: #454545;
+}
+
+.promos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.promos .foto {
+  background-color: #494949;
+  padding: 2.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+div .largo {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+div .largo-2 {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+div .largo .fila {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  text-align: center;
+  font-family: lato sans-serif;
+}
+.card-body-title {
+  color: #111111;
+  text-align: center;
+  width: 100%;
+}
+
+.expansion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.expansion .boton {
+  background-color: #111111;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.expansion-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.expansion-2 .boton-2 {
+  background-color: #111111;
+  color: #e5e5e5;
+}
+
+.expansion-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.expansion-3 .boton-3 {
+  background-color: #111111;
+  color: #e5e5e5;
+}
+
+.card-text {
+  color: #111111;
+}
+
+.articulos {
+  padding: 6.2rem;
+}
+
+.noticia {
+  background-color: #e5e5e5;
+  background-size: 100%;
+  width: 80%;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noticia .titulon {
+  color: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.noticia .titulon .imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25%;
+  gap: 2rem;
+}
+.ellos .parrafop {
+  color: #111111;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticia-2 {
+  background-color: #e5e5e5;
+  background-size: 100%;
+  color: #111111;
+  width: 80%;
+}
+.noticia-2 .titulon-2 {
+  color: #111111;
+}
+.noticia-2 .titulon-2 video {
+  width: 450px;
+  height: 450;
+}
+
+.play {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafop-2 {
+  color: #111111;
+  padding: 2em;
+}
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  color: #e5e5e5;
+  font-family: lato sans-serif;
+  padding: 2rem;
+}
+
+div .otro-largo {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+div .otro-largo-2 {
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+.malbec-venta {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25%;
+  gap: 2rem;
+}
+
+.filas-malbec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body2 {
+  text-align: center;
+  font-family: lato sans-serif;
+}
+.card-body2-title2 {
+  color: #111111;
+  text-align: center;
+  width: 100%;
+}
+
+.malbec-expansion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.malbec-expansion .boton {
+  background-color: #111111;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.malbec-expansion-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.malbec-expansion-2 .boton-2 {
+  background-color: #111111;
+  color: #e5e5e5;
+}
+
+.card-text2 {
+  color: #111111;
+}
+
+.foto-m {
+  background-color: #434343;
+  padding: 2.8rem;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contacto {
+  color: #e5e5e5;
+}
+
+.medio {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}
+.medio .formularios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding: 2rem;
+  justify-content: start;
+}
+.medio .formularios .primero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.medio .formularios .segundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.medio .formularios .tercero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.medio .formularios .cuarto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.medio .formularios .consultas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.medio .formularios .consultas .enviar {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  padding: 3rem;
+  right: 6rem;
+}
+
+.atencionalcliente {
+  color: #e5e5e5;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=style.scss.map */

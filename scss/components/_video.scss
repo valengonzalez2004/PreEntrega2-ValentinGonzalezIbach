@@ -1,0 +1,33 @@
+
+
+.noticia-2{
+    background-color: $color-fondo-letras;
+    background-size: 100%;
+    color: $color-fondox2-letras;
+    width: 80%;
+
+        @include mobile{
+            width: 100%;
+            padding: 0.5em;
+        }
+
+    .titulon-2{
+        color: $color-fondox2-letras;
+
+        video{
+            width: 450px;
+        }
+        
+    }
+}
+
+
+.play{
+    @include flexbox;
+}
+
+.parrafop-2{
+    color: $color-fondox2-letras;
+    padding: 2em;
+}
+

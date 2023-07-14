@@ -1,0 +1,82 @@
+.titulo {
+    @include flexbox;
+    padding: 2rem;
+
+    @include mobile{
+        padding: 0rem;
+        }
+}
+
+.contacto {
+    color: $color-fondo-letras;
+}
+
+.medio {
+    @include inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+
+    @include mobile {
+        @include flex2;
+        gap: 1rem;
+        
+        }
+        
+            .formularios {
+            @include flexbox;
+            display: inline-block;
+            padding: 2rem;
+            justify-content: start;
+
+            .primero {
+                @include flex2;
+                font-size: 15px;
+            }
+
+            .segundo {
+                @include flex2;
+                font-size: 15px;
+            }
+
+            .tercero {
+                @include flex2;
+                font-size: 15px;
+            }
+
+            .cuarto {
+                @include flex2;
+                font-size: 15px;
+            }
+
+
+            .consultas {
+                @include flex2;
+                width: 100%;
+
+                .enviar {
+                    display: flex;
+                    justify-content: center;
+                    width: 30px;
+                    padding: 3rem;
+                    right: 6rem;
+                }
+
+            }
+    }
+}
+
+.atencionalcliente {
+    color: $color-fondo-letras;
+    @include inline;
+    @include flex3;
+    padding: 2em;
+
+    @include mobile{
+        @include flex2;
+        align-items: center;
+        text-align: center;
+
+    }
+}

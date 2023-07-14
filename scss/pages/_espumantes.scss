@@ -1,0 +1,173 @@
+h2 {
+    @include flex2;
+    padding: 1.5rem;
+}
+
+// div .otro-largo-especial {
+//     width: 316px;
+//     display: flex;
+//     justify-content: center;
+
+
+
+// }
+
+
+.espumantes-venta {
+    gap: 3rem;
+    @include flex2;
+
+    @include mobile {
+        width: 100%;
+        padding: 2rem
+
+    }
+
+    .foto-espumantes2 {
+        @include flexbox;
+        background-color: #454545;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+
+.foto-espumante {
+    @include flexbox;
+    background-color: #454545;
+}
+
+div .otro-largo-espumante {
+    background-color: $color-fondo-letras;
+    width: 100%;
+
+    @include mobile {
+        width: 80%;
+        padding: 0.4rem;
+    }
+
+    &-2 {
+        background-color: $color-fondo-letras;
+        width: 100%;
+
+        .filas-espumantes {
+            @include flex2;
+
+            @include mobile {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}
+
+.card-body2 {
+    text-align: center;
+    font-family: lato sans-serif;
+    background-color: $color-fondo-letras;
+    width: 100%;
+
+    .card-text2 {
+        color: $color-fondox2-letras;
+
+
+        &-title2 {
+            color: $color-fondox2-letras;
+            text-align: center;
+            width: 100px;
+
+            @include mobile {
+                width: 100%;
+                padding: 2rem
+            }
+
+        }
+    }
+}
+
+
+.espumantes-expansion {
+    @include flex2;
+    padding: 0.5rem;
+
+    .espumantes-boton {
+        background-color: $color-fondox2-letras;
+        color: $color-fondo-letras;
+        @include flexbox;
+        justify-content: right;
+
+        @include mobile {
+            width: 110px;
+            justify-content: center
+        }
+
+    }
+}
+
+.espumantes-expansion-2 {
+    @include flexbox;
+    flex-direction: row;
+    padding: 0.5rem;
+
+    .espumantes-boton-2 {
+        background-color: $color-fondox2-letras;
+        @include flexbox;
+        color: $color-fondo-letras;
+
+        @include mobile {
+            width: 110px;
+        }
+
+    }
+}
+
+footer h2 {
+    color: $color-fondox2-letras;
+}
+
+
+.tres-espumantes {
+    @include flexbox;
+    width: 80%;
+    gap: 4rem;
+
+    @include mobile {
+        width: 80%;
+        gap: 0.5rem;
+        @include flexbox;
+
+    }
+}
+
+
+
+
+.cuatro-espumantes {
+    @include flexbox;
+    width: 80%;
+    gap: 4rem;
+
+    @include mobile {
+        width: 80%;
+        gap: 0.5rem;
+        padding: 4rem;
+        @include flexbox;
+    }
+}
+
+
+.filas-espumantes {
+    width: 100%;
+
+    @include mobile {
+        width: 130px;
+    }
+}
+
