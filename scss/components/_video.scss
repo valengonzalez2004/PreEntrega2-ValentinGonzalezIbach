@@ -6,16 +6,27 @@
     color: $color-fondox2-letras;
     width: 80%;
 
+        @include tablet{
+        width: 100%;
+        padding: 0.5em;
+        }
+
         @include mobile{
             width: 100%;
             padding: 0.5em;
         }
+
+
 
     .titulon-2{
         color: $color-fondox2-letras;
 
         video{
             width: 450px;
+
+            @include tablet{
+                width: 250px;
+            }
         }
         
     }

@@ -26,7 +26,7 @@
         
             .formularios {
             @include flexbox;
-            display: inline-block;
+            @include inline;
             padding: 2rem;
             justify-content: start;
 
@@ -56,8 +56,7 @@
                 width: 100%;
 
                 .enviar {
-                    display: flex;
-                    justify-content: center;
+                    @include flexbox;
                     width: 30px;
                     padding: 3rem;
                     right: 6rem;

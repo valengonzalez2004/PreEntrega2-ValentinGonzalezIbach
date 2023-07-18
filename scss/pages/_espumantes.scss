@@ -17,19 +17,10 @@ h2 {
     gap: 3rem;
     @include flex2;
 
-    @include mobile {
-        width: 100%;
-        padding: 2rem
-
-    }
-
     .foto-espumantes2 {
         @include flexbox;
         background-color: #454545;
 
-        @include mobile {
-            width: 100%;
-        }
     }
 
 }
@@ -104,7 +95,7 @@ div .otro-largo-espumante {
         justify-content: right;
 
         @include mobile {
-            width: 110px;
+            width: 100%;
             justify-content: center
         }
 
@@ -113,7 +104,6 @@ div .otro-largo-espumante {
 
 .espumantes-expansion-2 {
     @include flexbox;
-    flex-direction: row;
     padding: 0.5rem;
 
     .espumantes-boton-2 {
@@ -122,7 +112,7 @@ div .otro-largo-espumante {
         color: $color-fondo-letras;
 
         @include mobile {
-            width: 110px;
+            width: 100%;
         }
 
     }
@@ -139,9 +129,13 @@ footer h2 {
     gap: 4rem;
 
     @include mobile {
-        width: 80%;
-        gap: 0.5rem;
+
         @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
 
     }
 }
@@ -155,10 +149,13 @@ footer h2 {
     gap: 4rem;
 
     @include mobile {
-        width: 80%;
-        gap: 0.5rem;
-        padding: 4rem;
         @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+
     }
 }
 
@@ -167,7 +164,7 @@ footer h2 {
     width: 100%;
 
     @include mobile {
-        width: 130px;
+        width: 100%;
     }
 }
 

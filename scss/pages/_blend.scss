@@ -1,7 +1,5 @@
 h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flexbox;
     padding: 1.5rem;
 }
 
@@ -64,7 +62,6 @@ div .otro-largo {
 
 .blend-expansion {
     @include flexbox;
-    flex-direction: row;
     padding: 0.5rem;
 
     .blend-boton {
@@ -78,7 +75,6 @@ div .otro-largo {
 
 .blend-expansion-2 {
     @include flexbox;
-    flex-direction: row;
     padding: 0.5rem;
 
     .blend-boton-2 {
@@ -90,16 +86,11 @@ div .otro-largo {
 }
 
 .tres-blend{
-    display: flex;
-    flex-direction: row;
+    @include flexbox;
     width: 80%;
     gap: 4rem;
 
     @include mobile {
-        // width: 100%;
-        // gap: 0.5rem;
-        // padding: 0.5rem;
-        // @include flexbox;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 99%;
@@ -110,8 +101,7 @@ div .otro-largo {
 }
 
 .cuatro-blend{
-    display: flex;
-    flex-direction: row;
+    @include flexbox;
     width: 80%;
     gap: 4rem;
 

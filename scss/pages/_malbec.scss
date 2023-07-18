@@ -1,7 +1,6 @@
+
 h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flexbox;
     padding: 1.5rem;
 }
 
@@ -12,9 +11,8 @@ h2 {
 
 
     .foto-malbec2 {
-        display: flex;
+        @include flexbox;
         background-color: #454545;
-        justify-content: center;
     }
 
 }
@@ -65,7 +63,6 @@ div .otro-largo {
 
 .malbec-expansion {
     @include flexbox;
-    flex-direction: row;
     padding: 0.5rem;
 
     .malbec-boton {
@@ -83,7 +80,6 @@ div .otro-largo {
 
 .malbec-expansion-2 {
     @include flexbox;
-    flex-direction: row;
     padding: 0.5rem;
 
     .malbec-boton-2 {
@@ -101,39 +97,49 @@ div .otro-largo {
 
 
 .tres {
-    display: flex;
-    flex-direction: row;
+    @include flexbox;
     width: 80%;
     gap: 4rem;
 
     @include mobile {
+        // width: 99%;
+        // gap: 0.5rem;
+        // padding: 0.5rem;
+        // @include flexbox;
+
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
         width: 99%;
-        gap: 0.5rem;
         padding: 0.5rem;
-        @include flexbox;
+        gap: 0.5rem;
 
     }
 }
 
 .cuatro {
-    display: flex;
-    flex-direction: row;
+    @include flexbox;
     width: 80%;
     gap: 4rem;
 
     @include mobile {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
+        // display: flex;
+        // flex-direction: row;
+        // width: 100%;
+        // gap: 0.5rem;
+
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
         gap: 0.5rem;
     }
 }
 
 .imgvistandes {
-    width: 302px;
+    width: 100%;
 
     @include mobile {
-        width: 116px;
+        width: 100%;
     }
 }
 
@@ -154,9 +160,6 @@ div .otro-largo {
 
     @include mobile {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
+        @include flexbox;
     }
 }

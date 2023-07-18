@@ -58,6 +58,7 @@ header .logoo-png {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   height: 170px;
   width: 150px;
 }
@@ -74,7 +75,15 @@ header .logoo-png {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .linea {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .linea nav {
@@ -85,8 +94,8 @@ header .logoo-png {
   align-items: center;
   width: 100%;
   padding-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 31%;
+  padding-right: 20%;
   font-weight: bold;
   font-family: garamond;
 }
@@ -94,16 +103,32 @@ header .logoo-png {
   .linea nav {
     width: 100%;
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 31%;
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .linea nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    padding-right: 31%;
   }
 }
 .linea nav ul {
   display: inline-block;
   display: flex;
+  justify-content: space-between;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 3rem;
 }
 @media (min-width: 360px) and (max-width: 420px) {
@@ -112,7 +137,6 @@ header .logoo-png {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: center;
     padding: 3rem;
     gap: 2rem;
@@ -153,11 +177,12 @@ header .logoo-png {
 }
 
 .mover {
-  display: inline;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-items: center;
   align-items: end;
   width: 20%;
@@ -171,8 +196,19 @@ header .logoo-png {
     gap: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .mover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+}
 .mover .bi-cart-fill {
   display: inline-block;
+  display: flex;
+  justify-content: space-between;
   width: 20%;
   height: 20%;
   color: #111111;
@@ -185,6 +221,14 @@ header .logoo-png {
     align-items: center;
     padding: 0.5rem;
     color: #111111;
+  }
+}
+@media (max-width: 768px) {
+  .mover .bi-cart-fill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 .mover .bi-cart-fill:hover {
@@ -203,7 +247,6 @@ footer h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: #e5e5e5;
   color: #111111;
   font-family: lato sans-serif;
@@ -211,14 +254,25 @@ footer h2 {
 
 .junte {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .junte .footer-2 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 0.2rem;
   padding: 0.5em;
+}
+@media (max-width: 768px) {
+  .junte .footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .junte .footer-2 {
@@ -241,7 +295,6 @@ footer h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 13px;
   gap: 7px;
   color: #111111;
@@ -258,9 +311,18 @@ footer h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   justify-content: space-around;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .promos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .promos {
@@ -290,6 +352,8 @@ div .largo-2 {
 div .largo .fila {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-body {
@@ -307,7 +371,6 @@ div .largo .fila {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 .expansion .boton {
   background-color: #111111;
@@ -316,8 +379,6 @@ div .largo .fila {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: right;
 }
 
 .expansion-2 {
@@ -325,7 +386,6 @@ div .largo .fila {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 .expansion-2 .boton-2 {
   background-color: #111111;
@@ -337,7 +397,6 @@ div .largo .fila {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 .expansion-3 .boton-3 {
   background-color: #111111;
@@ -365,11 +424,19 @@ div .largo .fila {
   width: 80%;
   display: inline-block;
   display: flex;
+  justify-content: space-between;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 360px) and (max-width: 420px) {
+  .noticia {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
   .noticia {
     width: 100%;
     height: 100%;
@@ -383,6 +450,11 @@ div .largo .fila {
   align-items: center;
 }
 @media (min-width: 360px) and (max-width: 420px) {
+  .noticia .titulon {
+    block-size: 10%;
+  }
+}
+@media (max-width: 768px) {
   .noticia .titulon {
     block-size: 10%;
   }
@@ -410,9 +482,17 @@ div .largo .fila {
     padding: 1em;
   }
 }
+@media (max-width: 768px) {
+  .ellos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+}
 .ellos .parrafop {
   color: #111111;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,6 +511,12 @@ div .largo .fila {
   color: #111111;
   width: 80%;
 }
+@media (max-width: 768px) {
+  .noticia-2 {
+    width: 100%;
+    padding: 0.5em;
+  }
+}
 @media (min-width: 360px) and (max-width: 420px) {
   .noticia-2 {
     width: 100%;
@@ -442,6 +528,11 @@ div .largo .fila {
 }
 .noticia-2 .titulon-2 video {
   width: 450px;
+}
+@media (max-width: 768px) {
+  .noticia-2 .titulon-2 video {
+    width: 250px;
+  }
 }
 
 .play {
@@ -458,7 +549,9 @@ div .largo .fila {
 
 section h2 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   color: #e5e5e5;
   font-family: lato sans-serif;
   padding: 2rem;
@@ -468,6 +561,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -480,8 +574,10 @@ h2 {
 }
 .malbec-venta .foto-malbec2 {
   display: flex;
-  background-color: #454545;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  background-color: #454545;
 }
 
 div .otro-largo {
@@ -528,7 +624,6 @@ div .otro-largo-2 .filas-malbec {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 0.5rem;
 }
 .malbec-expansion .malbec-boton {
@@ -552,7 +647,6 @@ div .otro-largo-2 .filas-malbec {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 0.5rem;
 }
 .malbec-expansion-2 .malbec-boton-2 {
@@ -572,42 +666,45 @@ div .otro-largo-2 .filas-malbec {
 .tres {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   gap: 4rem;
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .tres {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     width: 99%;
-    gap: 0.5rem;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 0.5rem;
   }
 }
 
 .cuatro {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   gap: 4rem;
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .cuatro {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 99%;
+    padding: 0.5rem;
     gap: 0.5rem;
   }
 }
 
 .imgvistandes {
-  width: 302px;
+  width: 100%;
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .imgvistandes {
-    width: 116px;
+    width: 100%;
   }
 }
 
@@ -632,7 +729,7 @@ div .otro-largo-2 .filas-malbec {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
+    align-items: center;
   }
 }
 
@@ -651,23 +748,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 360px) and (max-width: 420px) {
-  .espumantes-venta {
-    width: 100%;
-    padding: 2rem;
-  }
-}
 .espumantes-venta .foto-espumantes2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #454545;
-}
-@media (min-width: 360px) and (max-width: 420px) {
-  .espumantes-venta .foto-espumantes2 {
-    width: 100%;
-  }
 }
 
 .foto-espumante {
@@ -743,7 +829,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .espumantes-expansion .espumantes-boton {
-    width: 110px;
+    width: 100%;
     justify-content: center;
   }
 }
@@ -753,7 +839,6 @@ div .otro-largo-espumante-2 .filas-espumantes {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 0.5rem;
 }
 .espumantes-expansion-2 .espumantes-boton-2 {
@@ -766,7 +851,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .espumantes-expansion-2 .espumantes-boton-2 {
-    width: 110px;
+    width: 100%;
   }
 }
 
@@ -784,12 +869,15 @@ footer h2 {
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .tres-espumantes {
-    width: 80%;
-    gap: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 99%;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
 }
 
@@ -803,13 +891,15 @@ footer h2 {
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .cuatro-espumantes {
-    width: 80%;
-    gap: 0.5rem;
-    padding: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 99%;
+    padding: 0.5rem;
+    gap: 0.5rem;
   }
 }
 
@@ -818,7 +908,7 @@ footer h2 {
 }
 @media (min-width: 360px) and (max-width: 420px) {
   .filas-espumantes {
-    width: 130px;
+    width: 100%;
   }
 }
 
@@ -826,6 +916,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -886,7 +977,6 @@ div .otro-largo-2 .filas-blend {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 0.5rem;
 }
 .blend-expansion .blend-boton {
@@ -904,7 +994,6 @@ div .otro-largo-2 .filas-blend {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 0.5rem;
 }
 .blend-expansion-2 .blend-boton-2 {
@@ -919,6 +1008,8 @@ div .otro-largo-2 .filas-blend {
 .tres-blend {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   gap: 4rem;
 }
@@ -935,6 +1026,8 @@ div .otro-largo-2 .filas-blend {
 .cuatro-blend {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   gap: 4rem;
 }
@@ -1016,6 +1109,8 @@ div .otro-largo-2 .filas-blend {
   justify-content: center;
   align-items: center;
   display: inline-block;
+  display: flex;
+  justify-content: space-between;
   padding: 2rem;
   justify-content: start;
 }
@@ -1056,7 +1151,9 @@ div .otro-largo-2 .filas-blend {
 }
 .medio .formularios .consultas .enviar {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 30px;
   padding: 3rem;
   right: 6rem;

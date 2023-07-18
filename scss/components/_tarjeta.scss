@@ -1,14 +1,22 @@
 .promos {
     @include flexbox;
-    flex-direction: row;
     justify-content: space-around;
     gap: 2rem;
+
+    @include tablet{
+        @include flexbox;
+        width: 100%;
+        padding: 1rem;
+    }
 
     @include mobile {
         @include flex2;
         width: 100%;
         padding: 1rem;
     }
+
+
+
 
     .foto {
         background-color: #494949;
@@ -33,8 +41,7 @@ div .largo {
     }
 
     .fila {
-        display: flex;
-        flex-direction: column;
+        @include flex2;
 
     }
 }
@@ -54,21 +61,17 @@ div .largo {
 
     .expansion {
         @include flexbox;
-        flex-direction: row;
 
         .boton {
             background-color: $color-fondox2-letras;
             color: $color-fondo-letras;
             @include flexbox;
-            flex-direction: row;
-            justify-content: right;
 
         }
     }
 
     .expansion-2 {
         @include flexbox;
-        flex-direction: row;
 
         .boton-2 {
             background-color: $color-fondox2-letras;
@@ -78,7 +81,6 @@ div .largo {
 
     .expansion-3 {
         @include flexbox;
-        flex-direction: row;
 
         .boton-3 {
             background-color: $color-fondox2-letras;

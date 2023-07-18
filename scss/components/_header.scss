@@ -4,15 +4,13 @@ header {
 
     @include mobile {
         width: 100%;
-
     }
 
     .logoo-png {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flexbox;
         height: 170px;
         width: 150px;
+
     }
 }
 
@@ -24,11 +22,12 @@ header {
     @include mobile {
         width: 100%;
         @include flex2;
-        width: 100%;
-
-
     }
 
+    @include tablet{
+        width: 100%;
+        @include flex2;
+    }
 
 
     nav {
@@ -36,28 +35,34 @@ header {
         @include flexbox;
         width: 100%;
         padding-top: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 31%;
+        padding-right: 20%;
         font-weight: bold;
         font-family: garamond;
 
         @include mobile {
             width: 100%;
-            display: flex;
+            @include flex2;
+            padding-right: 31%;
             gap: 1rem;
-            flex-direction: column;
+        }
+
+        @include tablet{
+            width: 100%;
+            @include flex3; 
+            padding-right: 31%;   
         }
 
 
         ul {
-            display: inline-block;
+            @include inline;
             @include flexbox;
+            width: 100%;
             gap: 3rem;
 
             @include mobile {
                 width: 100%;
                 @include flex2;
-                align-items: center;
                 padding: 3rem;
                 gap: 2rem;
             }
@@ -96,9 +101,8 @@ header {
 
 
 .mover {
-    display: inline;
+    @include inline;
     @include flex2;
-    align-items: center;
     align-items: end;
     width: 20%;
 
@@ -107,8 +111,14 @@ header {
         gap: 2rem;
     }
 
+    @include tablet{
+        @include flexbox;
+        padding: 1em;
+
+    }
+
     .bi-cart-fill {
-        display: inline-block;
+        @include inline;
         width: 20%;
         height: 20%;
         color: $color-fondox2-letras;
@@ -117,7 +127,10 @@ header {
             @include flexbox;
             padding: 0.5rem;
             color: $color-fondox2-letras;
+        }
 
+        @include tablet{
+            @include flexbox;
         }
 
         &:hover {
