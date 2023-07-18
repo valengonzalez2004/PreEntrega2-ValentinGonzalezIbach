@@ -26,6 +26,10 @@ footer {
         gap: 0.2rem;
         padding: 0.5em;
 
+            @include desktop{
+                @include flexbox;
+            }
+
             @include tablet{
                 @include flexbox;
             }

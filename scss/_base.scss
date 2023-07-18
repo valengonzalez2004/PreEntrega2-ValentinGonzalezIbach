@@ -99,7 +99,6 @@ footer h2{
 
 
 
-
 @mixin mobile {
     @media (min-width: 360px) and (max-width: 420px){
         @content;

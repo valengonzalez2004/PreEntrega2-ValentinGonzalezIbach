@@ -3,14 +3,6 @@ h2 {
     padding: 1.5rem;
 }
 
-// div .otro-largo-especial {
-//     width: 316px;
-//     display: flex;
-//     justify-content: center;
-
-
-
-// }
 
 
 .espumantes-venta {
@@ -37,6 +29,16 @@ div .otro-largo-espumante {
     background-color: $color-fondo-letras;
     width: 100%;
 
+    @include desktop{
+        width: 100%;
+        padding: 0.4rem;
+    }
+
+    @include tablet{
+        width: 100%;
+        padding: 0.4rem;
+    }
+
     @include mobile {
         width: 80%;
         padding: 0.4rem;
@@ -48,6 +50,14 @@ div .otro-largo-espumante {
 
         .filas-espumantes {
             @include flex2;
+
+            @include desktop{
+                width: 100%;
+            }
+
+            @include tablet{
+                width: 100%;
+            }
 
             @include mobile {
                 width: 100%;
@@ -74,6 +84,16 @@ div .otro-largo-espumante {
             text-align: center;
             width: 100px;
 
+            @include desktop{
+                width: 100%;
+                padding: 2rem;
+            }
+
+            @include tablet{
+                width: 100%;
+                padding: 2rem;
+            }
+
             @include mobile {
                 width: 100%;
                 padding: 2rem
@@ -94,6 +114,16 @@ div .otro-largo-espumante {
         @include flexbox;
         justify-content: right;
 
+        @include desktop{
+            width: 100%;
+            justify-content: center;
+        }
+
+        @include tablet{
+            width: 100%;
+            justify-content: center;
+        }
+
         @include mobile {
             width: 100%;
             justify-content: center
@@ -110,6 +140,14 @@ div .otro-largo-espumante {
         background-color: $color-fondox2-letras;
         @include flexbox;
         color: $color-fondo-letras;
+
+        @include desktop{
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
 
         @include mobile {
             width: 100%;
@@ -128,15 +166,31 @@ footer h2 {
     width: 80%;
     gap: 4rem;
 
-    @include mobile {
-
+    @include desktop{
         @include flexbox;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 99%;
         padding: 0.5rem;
         gap: 0.5rem;
+    }
 
+    @include tablet{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include mobile {
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
 }
 
@@ -147,6 +201,24 @@ footer h2 {
     @include flexbox;
     width: 80%;
     gap: 4rem;
+
+    @include desktop{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include tablet{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
 
     @include mobile {
         @include flexbox;
@@ -162,6 +234,14 @@ footer h2 {
 
 .filas-espumantes {
     width: 100%;
+
+    @include desktop{
+        width: 100%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
 
     @include mobile {
         width: 100%;

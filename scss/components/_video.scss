@@ -6,6 +6,11 @@
     color: $color-fondox2-letras;
     width: 80%;
 
+        @include desktop{
+            width: 100%;
+            padding: 0.5em;
+        }
+
         @include tablet{
         width: 100%;
         padding: 0.5em;
@@ -23,10 +28,6 @@
 
         video{
             width: 450px;
-
-            @include tablet{
-                width: 250px;
-            }
         }
         
     }

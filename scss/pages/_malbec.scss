@@ -21,6 +21,14 @@ div .otro-largo {
     background-color: $color-fondo-letras;
     width: 100%;
 
+    @include desktop{
+        width: 99%;
+    }
+
+    @include tablet{
+        width: 99%;
+    }
+
     @include mobile {
         width: 99%;
     }
@@ -53,6 +61,14 @@ div .otro-largo {
             text-align: center;
             width: 100%;
 
+            @include desktop{
+                width: 100%;
+            }
+
+            @include tablet{
+                width: 100%;
+            }
+
             @include mobile {
                 width: 100%;
             }
@@ -71,6 +87,16 @@ div .otro-largo {
         @include flexbox;
         justify-content: right;
 
+        @include desktop{
+            width: 100%;
+            justify-content: center;
+        }
+
+        @include tablet{
+            width: 100%;
+            justify-content: center;
+        }
+
         @include mobile{
             width: 100%;
             justify-content: center
@@ -87,6 +113,14 @@ div .otro-largo {
         @include flexbox;
         color: $color-fondo-letras;
 
+        @include desktop{
+            width: 100%;
+        }
+
+        @include tablet{
+            width: 100%;
+        }
+
         @include mobile {
             width: 100%;
             
@@ -101,18 +135,28 @@ div .otro-largo {
     width: 80%;
     gap: 4rem;
 
-    @include mobile {
-        // width: 99%;
-        // gap: 0.5rem;
-        // padding: 0.5rem;
-        // @include flexbox;
-
+    @include desktop{
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 99%;
         padding: 0.5rem;
         gap: 0.5rem;
+    }
 
+    @include tablet{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
     }
 }
 
@@ -121,12 +165,23 @@ div .otro-largo {
     width: 80%;
     gap: 4rem;
 
-    @include mobile {
-        // display: flex;
-        // flex-direction: row;
-        // width: 100%;
-        // gap: 0.5rem;
+    @include desktop{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
 
+    @include tablet{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include mobile {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 99%;
@@ -138,25 +193,31 @@ div .otro-largo {
 .imgvistandes {
     width: 100%;
 
+    @include desktop{
+        width: 94%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
     @include mobile {
         width: 100%;
     }
 }
 
 
-.ocho {
-    text-align: center;
-    font-family: lato sans-serif;
-    width: 100%;
-
-    @include mobile {
-        width: 110px;
-        text-align: center;
-    }
-}
-
 .tarjeta {
     width: 100%;
+
+    @include desktop{
+        width: 100%;
+    }
+
+    @include tablet{
+        width: 100%;
+        @include flexbox;
+    }
 
     @include mobile {
         width: 100%;

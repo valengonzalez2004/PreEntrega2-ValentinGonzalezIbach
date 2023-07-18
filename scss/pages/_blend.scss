@@ -20,6 +20,14 @@ div .otro-largo {
     background-color: $color-fondo-letras;
     width: 100%;
 
+    @include desktop{
+        width: 99%;
+    }
+
+    @include tablet{
+        width: 99%;
+    }
+
     @include mobile{
         width: 99%;
     }
@@ -30,7 +38,6 @@ div .otro-largo {
 
         .filas-blend {
             @include flex2;
-
         }
 
     }
@@ -42,22 +49,27 @@ div .otro-largo {
     font-family: lato sans-serif;
     width: 100%;
 
-    .card-text2 {
-        color: $color-fondox2-letras;
-        
-
-    &-title2 {
+    .card-title2{
         color: $color-fondox2-letras;
 
-        text-align: center;
-        width: 100%;
-
-        @include mobile{
-            width: 100%
+        @include desktop{
+            padding: 3rem;
         }
 
+        @include tablet{
+            padding: 2rem;
         }
+    
+        @include mobile {
+            padding: 0.01rem;
+        }
+
+        .card-body2 {
+            color: $color-fondox2-letras;
+        }
+    
     }
+
 }
 
 .blend-expansion {
@@ -90,6 +102,24 @@ div .otro-largo {
     width: 80%;
     gap: 4rem;
 
+    @include desktop{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include tablet{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
     @include mobile {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -105,6 +135,24 @@ div .otro-largo {
     width: 80%;
     gap: 4rem;
 
+    @include desktop{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    @include tablet{
+        @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
     @include mobile {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -118,6 +166,14 @@ div .otro-largo {
 .img-amalaya{
     width: 100%;
 
+    @include desktop{
+        width: 95.5%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
     @include mobile{
         width: 100%;
     }
@@ -127,6 +183,14 @@ div .otro-largo {
 .img-anaia{
     width: 100%;
 
+    @include desktop{
+        width: 95%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
     @include mobile{
         width: 100%;
     }
@@ -135,7 +199,16 @@ div .otro-largo {
 .img-badbrothers{
     width: 100%;
 
+    @include desktop{
+        width: 95%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
     @include mobile{
         width: 100%;
     }
 }
+

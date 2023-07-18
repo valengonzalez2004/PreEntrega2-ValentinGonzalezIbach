@@ -18,6 +18,16 @@
     justify-content: center;
     gap: 5rem;
 
+    @include desktop{
+        justify-content: center;
+        @include inline; 
+    }
+
+    @include tablet{
+        @include flex2;
+        gap: 1rem;
+    }
+
     @include mobile {
         @include flex2;
         gap: 1rem;
@@ -54,12 +64,43 @@
             .consultas {
                 @include flex2;
                 width: 100%;
+                gap: 1.5rem;
+
+                @include desktop{
+                    gap: 1rem;
+                }
+
+                @include tablet{
+                    gap: 1rem;
+                }
+
+                @include mobile{
+                    gap: 1rem;
+                }
 
                 .enviar {
                     @include flexbox;
                     width: 30px;
                     padding: 3rem;
                     right: 6rem;
+
+                    @include desktop{
+                        @include flexbox;
+                        width: 100%;
+                        padding: 1em;
+                    }
+
+                    @include tablet{
+                        @include flexbox;
+                        width: 100%;
+                        padding: 1em;
+                    }
+
+                    @include mobile{
+                        @include flexbox;
+                        width: 100%;
+                        padding: 1em;
+                    }
                 }
 
             }
@@ -72,10 +113,16 @@
     @include flex3;
     padding: 2em;
 
+    @include desktop{
+        @include flex3;
+        padding: 2em;
+    }
+
+    @include tablet{
+        @include flex2
+    }
+
     @include mobile{
         @include flex2;
-        align-items: center;
-        text-align: center;
-
     }
 }
