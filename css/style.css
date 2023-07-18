@@ -49,7 +49,7 @@ header {
   color: #111111;
   background-color: #e5e5e5;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   header {
     width: 100%;
   }
@@ -67,7 +67,7 @@ header .logoo-png {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .linea {
     width: 100%;
     display: flex;
@@ -90,7 +90,7 @@ header .logoo-png {
   font-weight: bold;
   font-family: garamond;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .linea nav {
     width: 100%;
     display: flex;
@@ -106,7 +106,7 @@ header .logoo-png {
   align-items: center;
   gap: 3rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .linea nav ul {
     width: 100%;
     display: flex;
@@ -130,7 +130,7 @@ header .logoo-png {
   text-decoration: none;
   color: #111111;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .linea nav ul li a {
     width: 100%;
     display: flex;
@@ -142,7 +142,7 @@ header .logoo-png {
 .linea nav ul li a:hover {
   color: #494949;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .linea nav ul li a:hover {
     width: 100%;
     display: flex;
@@ -162,7 +162,7 @@ header .logoo-png {
   align-items: end;
   width: 20%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .mover {
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ header .logoo-png {
   height: 20%;
   color: #111111;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .mover .bi-cart-fill {
     display: flex;
     flex-direction: row;
@@ -220,7 +220,7 @@ footer h2 {
   gap: 0.2rem;
   padding: 0.5em;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .junte .footer-2 {
     display: flex;
     flex-direction: column;
@@ -262,7 +262,7 @@ footer h2 {
   justify-content: space-around;
   gap: 2rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .promos {
     display: flex;
     flex-direction: column;
@@ -352,7 +352,7 @@ div .largo .fila {
 .articulos {
   padding: 6.2rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .articulos {
     width: 100%;
     padding: 0.3rem;
@@ -369,7 +369,7 @@ div .largo .fila {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .noticia {
     width: 100%;
     height: 100%;
@@ -382,7 +382,7 @@ div .largo .fila {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .noticia .titulon {
     block-size: 10%;
   }
@@ -401,7 +401,7 @@ div .largo .fila {
   gap: 2rem;
   padding: 1em;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .ellos {
     display: flex;
     flex-direction: column;
@@ -418,7 +418,7 @@ div .largo .fila {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .ellos .parrafop {
     font-size: 90%;
     padding: 0.5em;
@@ -431,7 +431,7 @@ div .largo .fila {
   color: #111111;
   width: 80%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .noticia-2 {
     width: 100%;
     padding: 0.5em;
@@ -488,7 +488,7 @@ div .otro-largo {
   background-color: #e5e5e5;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   div .otro-largo {
     width: 99%;
   }
@@ -517,7 +517,7 @@ div .otro-largo-2 .filas-malbec {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .card-body2 .card-text2-title2 {
     width: 100%;
   }
@@ -540,7 +540,7 @@ div .otro-largo-2 .filas-malbec {
   align-items: center;
   justify-content: right;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .malbec-expansion .malbec-boton {
     width: 100%;
     justify-content: center;
@@ -563,7 +563,7 @@ div .otro-largo-2 .filas-malbec {
   align-items: center;
   color: #e5e5e5;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .malbec-expansion-2 .malbec-boton-2 {
     width: 100%;
   }
@@ -575,7 +575,7 @@ div .otro-largo-2 .filas-malbec {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .tres {
     width: 99%;
     gap: 0.5rem;
@@ -593,7 +593,7 @@ div .otro-largo-2 .filas-malbec {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .cuatro {
     display: flex;
     flex-direction: row;
@@ -605,7 +605,7 @@ div .otro-largo-2 .filas-malbec {
 .imgvistandes {
   width: 302px;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .imgvistandes {
     width: 116px;
   }
@@ -616,7 +616,7 @@ div .otro-largo-2 .filas-malbec {
   font-family: lato sans-serif;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .ocho {
     width: 110px;
     text-align: center;
@@ -626,7 +626,7 @@ div .otro-largo-2 .filas-malbec {
 .tarjeta {
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .tarjeta {
     width: 100%;
     display: flex;
@@ -651,7 +651,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .espumantes-venta {
     width: 100%;
     padding: 2rem;
@@ -664,7 +664,7 @@ h2 {
   align-items: center;
   background-color: #454545;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .espumantes-venta .foto-espumantes2 {
     width: 100%;
   }
@@ -682,7 +682,7 @@ div .otro-largo-espumante {
   background-color: #e5e5e5;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   div .otro-largo-espumante {
     width: 80%;
     padding: 0.4rem;
@@ -698,7 +698,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   div .otro-largo-espumante-2 .filas-espumantes {
     width: 100%;
   }
@@ -718,7 +718,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
   text-align: center;
   width: 100px;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .card-body2 .card-text2-title2 {
     width: 100%;
     padding: 2rem;
@@ -741,7 +741,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
   align-items: center;
   justify-content: right;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .espumantes-expansion .espumantes-boton {
     width: 110px;
     justify-content: center;
@@ -764,7 +764,7 @@ div .otro-largo-espumante-2 .filas-espumantes {
   align-items: center;
   color: #e5e5e5;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .espumantes-expansion-2 .espumantes-boton-2 {
     width: 110px;
   }
@@ -782,7 +782,7 @@ footer h2 {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .tres-espumantes {
     width: 80%;
     gap: 0.5rem;
@@ -801,7 +801,7 @@ footer h2 {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .cuatro-espumantes {
     width: 80%;
     gap: 0.5rem;
@@ -816,7 +816,7 @@ footer h2 {
 .filas-espumantes {
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .filas-espumantes {
     width: 130px;
   }
@@ -846,7 +846,7 @@ div .otro-largo {
   background-color: #e5e5e5;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   div .otro-largo {
     width: 99%;
   }
@@ -875,7 +875,7 @@ div .otro-largo-2 .filas-blend {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .card-body2 .card-text2-title2 {
     width: 100%;
   }
@@ -922,15 +922,13 @@ div .otro-largo-2 .filas-blend {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .tres-blend {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     width: 99%;
-    gap: 0.5rem;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 0.5rem;
   }
 }
 
@@ -940,7 +938,7 @@ div .otro-largo-2 .filas-blend {
   width: 80%;
   gap: 4rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .cuatro-blend {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -950,12 +948,30 @@ div .otro-largo-2 .filas-blend {
   }
 }
 
+.img-amalaya {
+  width: 100%;
+}
+@media (min-width: 360px) and (max-width: 420px) {
+  .img-amalaya {
+    width: 100%;
+  }
+}
+
 .img-anaia {
   width: 100%;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .img-anaia {
-    width: 121.55px;
+    width: 100%;
+  }
+}
+
+.img-badbrothers {
+  width: 100%;
+}
+@media (min-width: 360px) and (max-width: 420px) {
+  .img-badbrothers {
+    width: 100%;
   }
 }
 
@@ -966,7 +982,7 @@ div .otro-largo-2 .filas-blend {
   align-items: center;
   padding: 2rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .titulo {
     padding: 0rem;
   }
@@ -985,7 +1001,7 @@ div .otro-largo-2 .filas-blend {
   justify-content: center;
   gap: 5rem;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .medio {
     display: flex;
     flex-direction: column;
@@ -1057,7 +1073,7 @@ div .otro-largo-2 .filas-blend {
   align-items: end;
   padding: 2em;
 }
-@media (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 420px) {
   .atencionalcliente {
     display: flex;
     flex-direction: column;

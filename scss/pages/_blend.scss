@@ -96,10 +96,15 @@ div .otro-largo {
     gap: 4rem;
 
     @include mobile {
+        // width: 100%;
+        // gap: 0.5rem;
+        // padding: 0.5rem;
+        // @include flexbox;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
         width: 99%;
-        gap: 0.5rem;
         padding: 0.5rem;
-        @include flexbox;
+        gap: 0.5rem;
 
     }
 }
@@ -119,10 +124,28 @@ div .otro-largo {
     }
 }
 
+
+.img-amalaya{
+    width: 100%;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+
+
 .img-anaia{
     width: 100%;
 
     @include mobile{
-        width: 121.55px;
+        width: 100%;
+    }
+}
+
+.img-badbrothers{
+    width: 100%;
+
+    @include mobile{
+        width: 100%;
     }
 }
