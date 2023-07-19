@@ -158,6 +158,12 @@ header .logoo-png {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 50px;
   padding: 1em;
+  padding-left: 39%;
+}
+@media (min-width: 360px) and (max-width: 420px) {
+  .top-nav {
+    padding-left: 3%;
+  }
 }
 
 .menu {
@@ -267,6 +273,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-family: lalo;
   color: #111111;
 }
 a:hover {
