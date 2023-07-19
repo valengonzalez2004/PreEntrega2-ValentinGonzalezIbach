@@ -224,3 +224,12 @@ div .otro-largo {
         @include flexbox;
     }
 }
+
+.img-fluidrounded-start{
+    width: 100%;
+    background: linear-gradient(#454545, $color-fondo-letras);
+}
+
+.foto-malbec2{
+    width: 100%;
+}

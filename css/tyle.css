@@ -1,0 +1,18 @@
+/* Error: expected ")".
+ *    ,
+ * 29 |         padding: 1rem;
+ *    |                ^
+ *    '
+ *   scss\components\_tarjeta.scss 29:16  @import
+ *   scss\main.scss 5:9                   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ")".\a    \2577 \a 29 \2502          padding: 1rem;\d\a    \2502                 ^\a    \2575 \a   scss\\components\\_tarjeta.scss 29:16  @import\a   scss\\main.scss 5:9                   root stylesheet';
+}

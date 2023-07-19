@@ -1,9 +1,9 @@
 
 
 .noticia-2{
-    background-color: $color-fondo-letras;
+    // background-color: $color-fondo-letras;
     background-size: 100%;
-    color: $color-fondox2-letras;
+    color: $color-fondo-letras;
     width: 80%;
 
         @include desktop{
@@ -24,22 +24,22 @@
 
 
     .titulon-2{
-        color: $color-fondox2-letras;
+        color: $color-fondo-letras; 
+    }
+}
 
-        video{
-            width: 450px;
-        }
-        
+.play{
+    @include flexbox;
+    width: 80%;
+
+    @include mobile{
+        width: 100%;
     }
 }
 
 
-.play{
-    @include flexbox;
-}
-
 .parrafop-2{
-    color: $color-fondox2-letras;
+    color: $color-fondo-letras;
     padding: 2em;
 }
 

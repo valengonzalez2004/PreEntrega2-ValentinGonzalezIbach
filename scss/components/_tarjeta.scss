@@ -24,7 +24,8 @@
 
 
     .foto {
-        background-color: #494949;
+        // background-color: #494949;
+        background: linear-gradient(#454545, $color-fondo-letras);
         padding: 1rem;
         width: 100%;
         height: 100%;
@@ -47,6 +48,7 @@ div .largo {
 
     .fila {
         @include flex2;
+        box-shadow: 10px 10px 5px;
 
     }
 }
