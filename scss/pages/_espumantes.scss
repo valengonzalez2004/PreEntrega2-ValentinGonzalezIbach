@@ -9,6 +9,55 @@ h2 {
     gap: 3rem;
     @include flex2;
 
+    .fila-alambrado{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+    
+    .fila-haroldos{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+    
+    .fila-espmanos{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+    
+    
+    .fila-herencia{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+    
+    .fila-alambrados{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+    
+    .fila-salentain{
+        @include flex2;
+    
+        &:hover{
+            box-shadow: #454545 2px 25px 13px;
+        }
+    }
+
     .foto-espumantes2 {
         @include flexbox;
         background-color: #454545;

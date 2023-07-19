@@ -8,6 +8,7 @@
     @include desktop{
         @include flexbox;
         width: 100%;
+        padding-right: 15%; 
     }
 
     @include tablet{
@@ -35,6 +36,12 @@
 }
 
 
+.otro-largo1{
+    width: 100%;
+    background-color: #454545;
+}
+
+
 div .largo {
     background-color: $color-fondo-letras;
     width: 100%;
@@ -49,24 +56,18 @@ div .largo {
 
     .fila1 {
         @include flex2;
-        background: $color-fondo-letras;
-        box-shadow:  color(#454545) 25px 13px;
-        transition-duration: 2s;
 
         &:hover{
-            transform: scale(1.2);
+            box-shadow: #454545 2px 25px 13px;
         }
     }
 }
 
 .fila2 {
     @include flex2;
-    background: $color-fondo-letras;
-    box-shadow: color(#454545) 2px 25px 13px;
-    transition-duration: 2s;
 
     &:hover{
-        transform: scale(1.2);
+        box-shadow: #454545 2px 25px 13px;
     }
 
 }
@@ -74,12 +75,9 @@ div .largo {
 
 .fila3 {
     @include flex2;
-    background-color: $color-fondo-letras;
-    box-shadow: color(#454545) 2px 25px 13px;
-    transition-duration: 2s;
 
     &:hover{
-        transform: scale(1.2);
+        box-shadow: #454545 2px 25px 13px;
     }
 
 

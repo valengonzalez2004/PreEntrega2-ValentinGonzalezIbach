@@ -430,6 +430,7 @@ footer h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-right: 15%;
   }
 }
 @media (max-width: 768px) {
@@ -459,6 +460,11 @@ footer h2 {
   height: 100%;
 }
 
+.otro-largo1 {
+  width: 100%;
+  background-color: #454545;
+}
+
 div .largo {
   background-color: #e5e5e5;
   width: 100%;
@@ -472,12 +478,9 @@ div .largo .fila1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e5e5e5;
-  box-shadow: color(#454545) 25px 13px;
-  transition-duration: 2s;
 }
 div .largo .fila1:hover {
-  transform: scale(1.2);
+  box-shadow: #454545 2px 25px 13px;
 }
 
 .fila2 {
@@ -485,12 +488,9 @@ div .largo .fila1:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e5e5e5;
-  box-shadow: color(#454545) 2px 25px 13px;
-  transition-duration: 2s;
 }
 .fila2:hover {
-  transform: scale(1.2);
+  box-shadow: #454545 2px 25px 13px;
 }
 
 .fila3 {
@@ -498,12 +498,9 @@ div .largo .fila1:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e5e5e5;
-  box-shadow: color(#454545) 2px 25px 13px;
-  transition-duration: 2s;
 }
 .fila3:hover {
-  transform: scale(1.2);
+  box-shadow: #454545 2px 25px 13px;
 }
 
 .card-body {
@@ -776,12 +773,79 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.malbec-venta .fila-catena {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: color(#454545) 25px 13px;
+}
+.malbec-venta .fila-catena:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-vistandes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: color(#454545) 25px 13px;
+}
+.malbec-venta .fila-vistandes:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-portillo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: color(#454545) 25px 13px;
+}
+.malbec-venta .fila-portillo:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-promocion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.malbec-venta .fila-promocion:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-malajunta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.malbec-venta .fila-malajunta:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-manosnegras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.malbec-venta .fila-manosnegras:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.malbec-venta .fila-vila {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.malbec-venta .fila-vila:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
 .malbec-venta .foto-malbec2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #454545;
+  background: linear-gradient(#454545, #e5e5e5);
 }
 
 div .otro-largo {
@@ -945,6 +1009,14 @@ div .otro-largo-2 .filas-malbec {
   }
 }
 
+.uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .cuatro {
   display: flex;
   flex-direction: row;
@@ -1050,6 +1122,60 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.espumantes-venta .fila-alambrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-alambrado:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.espumantes-venta .fila-haroldos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-haroldos:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.espumantes-venta .fila-espmanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-espmanos:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.espumantes-venta .fila-herencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-herencia:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.espumantes-venta .fila-alambrados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-alambrados:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+.espumantes-venta .fila-salentain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espumantes-venta .fila-salentain:hover {
+  box-shadow: #454545 2px 25px 13px;
 }
 .espumantes-venta .foto-espumantes2 {
   display: flex;
@@ -1587,6 +1713,76 @@ div .otro-largo-2 .filas-blend {
   .img-badbrothers {
     width: 100%;
   }
+}
+
+.fila-sibilino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-sibilino:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-amalaya {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-amalaya:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-quieto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-quieto:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-promo-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-promo-2:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-anaia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-anaia:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-perro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-perro:hover {
+  box-shadow: #454545 2px 25px 13px;
+}
+
+.fila-bad-brothers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fila-bad-brothers:hover {
+  box-shadow: #454545 2px 25px 13px;
 }
 
 .titulo {

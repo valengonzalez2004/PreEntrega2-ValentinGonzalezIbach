@@ -212,3 +212,58 @@ div .otro-largo {
     }
 }
 
+.fila-sibilino{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-amalaya{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-quieto{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-promo-2{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-anaia{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-perro{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
+
+.fila-bad-brothers{
+    @include flex2;
+
+    &:hover{
+        box-shadow: #454545 2px 25px 13px;
+    }
+}
