@@ -2,11 +2,11 @@ header {
     color: $color-fondox2-letras;
     background-color: $color-fondo-letras;
 
-    @include desktop{
+    @include desktop {
         width: 100%;
     }
 
-    @include tablet{
+    @include tablet {
         width: 100%;
     }
 
@@ -24,144 +24,18 @@ header {
 
 
 
-.linea {
-    @include inline;
-
-    @include desktop{
-        width: 100%;
-        @include inline;
-    }
-
-    @include mobile {
-        width: 100%;
-        @include flex2;
-    }
-
-    @include tablet{
-        width: 100%;
-        @include flex2;
-    }
-
-
-    nav {
-        background-color: $color-fondo-letras;
-        @include flexbox;
-        width: 100%;
-        padding-top: 20px;
-        padding-left: 31%;
-        padding-right: 20%;
-        font-weight: bold;
-        font-family: garamond;
-
-        @include desktop{
-            width: 90%;
-            @include flexbox;
-        }
-
-        @include tablet{
-            width: 100%;
-            @include flex3; 
-            padding-right: 31%;   
-        }
-
-        @include mobile {
-            width: 100%;
-            @include flex2;
-            padding-right: 31%;
-            gap: 1rem;
-        }
-
-
-        ul {
-            @include inline;
-            @include flexbox;
-            width: 100%;
-            gap: 3rem;
-
-            @include desktop{
-                width: 100%;
-                @include flexbox;
-                gap: 2rem;
-            }
-
-            @include tablet{
-                width: 100%;
-                @include flexbox;
-                gap: 2rem;
-            }
-
-            @include mobile {
-                width: 100%;
-                @include flex2;
-                padding: 3rem;
-                gap: 2rem;
-            }
-
-            li {
-                list-style: none;
-                padding: 0 10px;
-
-
-                a {
-                    @include flexbox;
-                    text-decoration: none;
-                    color: $color-fondox2-letras;
-
-                    @include desktop{
-                        width: 100%;
-                        @include flexbox;
-                    }
-
-                    @include tablet {
-                        width: 100%;
-                        @include flexbox;
-                    }
-
-                    @include mobile {
-                        width: 100%;
-                        @include flex2;
-                    }
-
-                    &:hover {
-                        color: #494949;
-
-                        @include desktop{
-                            width: 100%;
-                            @include flexbox;
-                        }
-
-                        @include tablet{
-                            width: 100%;
-                            @include flexbox;
-                        }
-
-                        @include mobile {
-                            width: 100%;
-                            @include flex2;
-
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-
-}
-
-
 .mover {
     @include inline;
     @include flex2;
     align-items: end;
     width: 20%;
 
-    @include desktop{
+    @include desktop {
         @include flex2;
         padding: 1em;
     }
 
-    @include tablet{
+    @include tablet {
         @include flexbox;
         padding: 1em;
     }
@@ -178,11 +52,11 @@ header {
         height: 20%;
         color: $color-fondox2-letras;
 
-        @include desktop{
+        @include desktop {
             @include inline;
         }
 
-        @include tablet{
+        @include tablet {
             @include flexbox;
         }
 
@@ -198,4 +72,139 @@ header {
     }
 
 
+}
+
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-fondo-letras;
+    background: linear-gradient $color-fondo-letras;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 50px;
+    padding: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: $color-fondox2-letras;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: $color-fondox2-letras
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@include mobile {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 220px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background-color: #e2e2e2;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
+
+
+
+a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $color-fondox2-letras;
+
+    &:hover{
+        color: #454545;
+    }
 }

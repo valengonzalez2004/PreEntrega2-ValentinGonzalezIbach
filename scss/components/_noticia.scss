@@ -19,9 +19,9 @@
 }
 
 .noticia{
-    background-color: $color-fondo-letras;
+    background-image: url(../fondocava.jpeg);
     background-size: 100%;
-    width: 80%;
+    width: 100%;
     @include inline;
     @include flex2;
 

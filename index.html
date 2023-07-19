@@ -16,47 +16,77 @@
 <body class="todo-oscuro">
 
     <header>
-
+        
         <!-- <h1>
             <center>Cava Oculta</center>
         </h1> -->
         <center><img class="logoo-png" src="images/logo2.png"></center>
 
-        <div class="linea">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">INICIO</a>
-                    </li>
+        <!-- <div class="linea">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="./index.html">INICIO</a>
+                        </li>
 
-                    <li>
-                        <a href="./pages/malbec.html">MALBEC</a>
-                    </li>
+                        <li>
+                            <a href="./pages/malbec.html">MALBEC</a>
+                        </li>
 
-                    <li>
-                        <a href="./pages/espumantes.html">ESPUMANTES</a>
-                    </li>
+                        <li>
+                            <a href="./pages/espumantes.html">ESPUMANTES</a>
+                        </li>
 
-                    <li>
-                        <a href="./pages/blend.html">BLEND</a>
-                    </li>
+                        <li>
+                            <a href="./pages/blend.html">BLEND</a>
+                        </li>
 
-                    <li>
-                        <a href="./pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="mover">
-                <a class="bi bi-cart-fill" href="#"></a>
+                        <li>
+                            <a href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mover">
+                    <a class="bi bi-cart-fill" href="#"></a>
+                </div>
+            </div> -->
+
+
+        <!-- <nav>
+            <div class="navbar">
+                <div class=" nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="./pages/malbec.html">MALBEC</a></li>
+                        <li><a href="./pages/espumantes.html">ESPUMANTES</a></li>
+                        <li><a href="./pages/blend.html">BLEND</a></li>
+                        <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav> -->
+
+        <section class="top-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/malbec.html">Malbec</a></li>
+                <li><a href="./pages/espumantes.html">Espumantes</a></li>
+                <li><a href="./pages/blend.html">Blend</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </section>
 
 
-        <!-- <div class="buscador">
-            <form action=""></form> <label for="mensaje"></label>
-            <input type="Buscar" id="" placeholder="Buscar...">
-            <input class="enviar" type="submit">
-        </div> -->
+
 
 
     </header>
@@ -72,82 +102,82 @@
 
             <div class="container">
                 <a href="#">
-                <div class="promos">
-                    <div class="largo">
-                        <div class="fila1">
+                    <div class="promos">
+                        <div class="largo">
+                            <div class="fila1">
+                                <div class="foto">
+                                    <img src="./images/ochoa.png" class="img-fluid rounded-start">
+                                </div>
+                                <hr>
+                                <div class="tarjeta">
+                                    <div class="card-body">
+                                        <h3 class="card-title">PROMO 3x2</h3>
+                                        <p class="card-text">Informacion de ejemplo en esta tarjeta por la promocion
+                                            numero
+                                            1</p>
+                                        <p class="card-text">$8700</small>
+                                        </p>
+                                        <div class="expansion">
+                                            <button class="boton" type="button" class="btn btn-primary">Agregar al
+                                                carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </a>
+
+                <a href="#">
+                    <div class="largo-2">
+                        <div class="fila2">
                             <div class="foto">
-                                <img src="./images/ochoa.png" class="img-fluid rounded-start">
+                                <img src="./images/nt.png" class="img-fluid rounded-start" alt="">
                             </div>
                             <hr>
                             <div class="tarjeta">
                                 <div class="card-body">
-                                    <h3 class="card-title">PROMO 3x2</h3>
+                                    <h3 class="card-title">PROMO 2x1</h3>
                                     <p class="card-text">Informacion de ejemplo en esta tarjeta por la promocion
                                         numero
-                                        1</p>
-                                    <p class="card-text">$8700</small>
+                                        2</p>
+                                    <p class="card-text"><small class="text-body-secondary">$4500</small>
                                     </p>
-                                    <div class="expansion">
-                                        <button class="boton" type="button" class="btn btn-primary">Agregar al
+                                    <div class="expansion-2">
+                                        <button class="boton-2" type="button" class="btn btn-primary">Agregar al
                                             carrito</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </a>
+                </a>
 
-                    <a href="#">
-                        <div class="largo-2">
-                            <div class="fila2">
-                                <div class="foto">
-                                    <img src="./images/nt.png" class="img-fluid rounded-start" alt="">
-                                </div>
-                                <hr>
-                                <div class="tarjeta">
-                                    <div class="card-body">
-                                        <h3 class="card-title">PROMO 2x1</h3>
-                                        <p class="card-text">Informacion de ejemplo en esta tarjeta por la promocion
-                                            numero
-                                            2</p>
-                                        <p class="card-text"><small class="text-body-secondary">$4500</small>
-                                        </p>
-                                        <div class="expansion-2">
-                                            <button class="boton-2" type="button" class="btn btn-primary">Agregar al
-                                                carrito</button>
-                                        </div>
+                <a href="#">
+                    <div class="largo-2">
+                        <div class="fila3">
+                            <div class="foto">
+                                <img src="./images/oa.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <hr>
+                            <div class="tarjeta">
+                                <div class="card-body">
+                                    <h3 class="card-title">PROMO 2x1</h3>
+                                    <p class="card-text">Informacion de ejemplo en esta tarjeta por la promocion
+                                        numero
+                                        3</p>
+                                    <p class="card-text"><small class="text-body-secondary">$3200
+                                        </small>
+                                    </p>
+                                    <div class="expansion-3">
+                                        <button class="boton-3" type="button" class="btn btn-primary">Agregar al
+                                            carrito</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="largo-2">
-                            <div class="fila3">
-                                <div class="foto">
-                                    <img src="./images/oa.png" class="img-fluid rounded-start" alt="">
-                                </div>
-                                <hr>
-                                <div class="tarjeta">
-                                    <div class="card-body">
-                                        <h3 class="card-title">PROMO 2x1</h3>
-                                        <p class="card-text">Informacion de ejemplo en esta tarjeta por la promocion
-                                            numero
-                                            3</p>
-                                        <p class="card-text"><small class="text-body-secondary">$3200
-                                            </small>
-                                        </p>
-                                        <div class="expansion-3">
-                                            <button class="boton-3" type="button" class="btn btn-primary">Agregar al
-                                                carrito</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
             </div>
 
 
