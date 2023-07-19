@@ -1,7 +1,9 @@
 .promos {
     @include flexbox;
     justify-content: space-around;
-    gap: 2rem;
+    width: 80%;
+    padding-left: 15%;
+    gap: 5rem;
 
     @include desktop{
         @include flexbox;
@@ -19,7 +21,6 @@
         width: 100%;
         padding: 1rem;
     }
-
 
 
 
@@ -46,20 +47,52 @@ div .largo {
 
     }
 
-    .fila {
+    .fila1 {
         @include flex2;
-        box-shadow: 10px 10px 5px;
+        background: $color-fondo-letras;
+        box-shadow:  color(#454545) 25px 13px;
+        transition-duration: 2s;
 
+        &:hover{
+            transform: scale(1.2);
+        }
     }
+}
+
+.fila2 {
+    @include flex2;
+    background: $color-fondo-letras;
+    box-shadow: color(#454545) 2px 25px 13px;
+    transition-duration: 2s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+}
+
+
+.fila3 {
+    @include flex2;
+    background-color: $color-fondo-letras;
+    box-shadow: color(#454545) 2px 25px 13px;
+    transition-duration: 2s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+
 }
 
     .card-body {
         text-align: center;
         font-family: lato sans-serif;
 
-        &-title {
+        .card-title {
             color: $color-fondox2-letras;
             text-align: center;
+            text-decoration: none;
             width: 100%;
 
 
@@ -102,5 +135,7 @@ div .largo {
     }
     
 
-
+a {
+    text-decoration: none;
+}
     
