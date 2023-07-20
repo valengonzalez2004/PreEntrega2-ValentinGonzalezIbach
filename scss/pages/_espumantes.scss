@@ -1,6 +1,6 @@
-h2 {
+h1 {
     @include flex2;
-    padding: 1.5rem;
+    padding-top: 3rem;
 }
 
 
@@ -8,6 +8,11 @@ h2 {
 .espumantes-venta {
     gap: 3rem;
     @include flex2;
+    padding: 3rem;
+
+    @include mobile{
+        padding: 1rem;
+    }
 
     .fila-alambrado{
         @include flex2;

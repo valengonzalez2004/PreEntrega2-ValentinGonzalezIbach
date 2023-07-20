@@ -1,0 +1,29 @@
+.lugar{
+    @include flex2;
+
+    @include mobile{
+        @include flex2;
+        text-align: center;
+    }
+}
+
+
+.ubi{
+    @include flex2;
+    gap: 0.5rem;
+
+    @include mobile{
+        text-align: center;
+    }
+}
+
+.direcciones{
+    @include flex2;
+    padding: 2rem;
+
+    @include mobile{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+}

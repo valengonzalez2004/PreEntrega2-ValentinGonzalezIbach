@@ -8,6 +8,12 @@
   background-color: #111111;
 }
 
+h1 {
+  font-family: serif;
+  color: #e5e5e5;
+  gap: 0.5;
+}
+
 h2 {
   font-family: serif;
   color: #e5e5e5;
@@ -32,6 +38,15 @@ article p {
   display: flex;
   flex-direction: column;
   gap: 6rem;
+}
+
+.img-fluidrounded-start {
+  width: 100%;
+  background: #454545;
+}
+
+aside {
+  padding: 5rem;
 }
 
 footer h2 {
@@ -76,6 +91,7 @@ header .logoo-png {
 .top-nav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   background-color: #e5e5e5;
@@ -108,6 +124,8 @@ header .logoo-png {
 .menu {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -210,8 +228,8 @@ header .logoo-png {
 a {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: lalo;
   color: #111111;
 }
@@ -339,7 +357,7 @@ footer h2 {
   }
 }
 .promos .foto {
-  background: linear-gradient(#454545, #e5e5e5);
+  background: #454545;
   padding: 1rem;
   width: 100%;
   height: 100%;
@@ -632,6 +650,49 @@ a {
   padding: 2em;
 }
 
+.lugar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .lugar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.ubi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .ubi {
+    text-align: center;
+  }
+}
+
+.direcciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .direcciones {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
 section h2 {
   display: flex;
   flex-direction: row;
@@ -701,12 +762,12 @@ section h2 {
   align-items: center;
 }
 
-h2 {
+h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .malbec-venta {
@@ -715,6 +776,13 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .malbec-venta {
+    padding: 0em;
+    gap: 2rem;
+  }
 }
 .malbec-venta .fila-catena {
   display: flex;
@@ -788,7 +856,7 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: #454545;
-  background: linear-gradient(#454545, #e5e5e5);
+  background: #454545;
 }
 
 div .otro-largo {
@@ -1042,21 +1110,16 @@ div .otro-largo-2 .filas-malbec {
   }
 }
 
-.img-fluidrounded-start {
-  width: 100%;
-  background: linear-gradient(#454545, #e5e5e5);
-}
-
 .foto-malbec2 {
   width: 100%;
 }
 
-h2 {
+h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding-top: 3rem;
 }
 
 .espumantes-venta {
@@ -1065,6 +1128,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .espumantes-venta {
+    padding: 1rem;
+  }
 }
 .espumantes-venta .fila-alambrado {
   display: flex;
@@ -1402,12 +1471,12 @@ footer h2 {
   }
 }
 
-h2 {
+h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 .blend-venta {
@@ -1416,6 +1485,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .blend-venta {
+    padding: 1rem;
+  }
 }
 .blend-venta .foto-blend2 {
   display: flex;
@@ -1728,7 +1803,7 @@ div .otro-largo-2 .filas-blend {
   box-shadow: #454545 2px 25px 13px;
 }
 
-.titulo {
+h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1736,8 +1811,8 @@ div .otro-largo-2 .filas-blend {
   padding: 2rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .titulo {
-    padding: 0rem;
+  h1 {
+    padding: 2rem;
   }
 }
 
@@ -1752,7 +1827,8 @@ div .otro-largo-2 .filas-blend {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5rem;
+  gap: 1.5em;
+  padding: 2rem;
 }
 @media (max-width: 1200px) {
   .medio {
@@ -1769,6 +1845,7 @@ div .otro-largo-2 .filas-blend {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-align: center;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1777,7 +1854,9 @@ div .otro-largo-2 .filas-blend {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1em;
   }
 }
 .medio .formularios {
@@ -1790,6 +1869,11 @@ div .otro-largo-2 .filas-blend {
   justify-content: space-between;
   padding: 2rem;
   justify-content: start;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .medio .formularios {
+    padding: 1rem;
+  }
 }
 .medio .formularios .primero {
   display: flex;

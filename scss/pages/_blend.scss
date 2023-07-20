@@ -1,12 +1,17 @@
-h2 {
+h1 {
     @include flexbox;
-    padding: 1.5rem;
+    padding: 3rem;
 }
 
 
 .blend-venta {
     gap: 3rem;
     @include flex2;
+    padding: 3rem;
+
+    @include mobile{
+        padding: 1rem;
+    }
 
     .foto-blend2{
         display: flex;

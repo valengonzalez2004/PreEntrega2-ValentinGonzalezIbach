@@ -57,6 +57,12 @@ $color-fondox2-letras:#111111;
     background-color: $color-fondox2-letras;
 }
 
+h1{
+    font-family: serif;
+    color: $color-fondo-letras;
+    gap: 0.5;
+}
+
 h2{
     font-family: serif;
     color: $color-fondo-letras;
@@ -82,6 +88,17 @@ article p{
     flex-direction: column;
     gap: 6rem;
 }
+
+.img-fluidrounded-start {
+    width: 100%;
+    // filter: drop-shadow(5px 5px 3px);
+    background: #454545;
+}
+
+aside{
+    padding: 5rem;
+}
+
 
 footer h2{
     color: $color-fondox2-letras;

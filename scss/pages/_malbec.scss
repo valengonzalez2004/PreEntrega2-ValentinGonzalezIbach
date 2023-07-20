@@ -1,12 +1,18 @@
-h2 {
+h1 {
     @include flexbox;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 
 .malbec-venta {
     gap: 3rem;
     @include flex2;
+    padding: 1rem;
+
+    @include mobile{
+        padding: 0em;
+        gap: 2rem;
+    }
 
     .fila-catena {
         @include flex2;
@@ -74,7 +80,7 @@ h2 {
     .foto-malbec2 {
         @include flexbox;
         background-color: #454545;
-        background: linear-gradient(#454545, $color-fondo-letras);
+        background: #454545;
     }
 
 }
@@ -292,11 +298,6 @@ div .otro-largo {
     }
 }
 
-.img-fluidrounded-start {
-    width: 100%;
-    // filter: drop-shadow(5px 5px 3px);
-    background: linear-gradient(#454545, $color-fondo-letras);
-}
 
 .foto-malbec2 {
     width: 100%;

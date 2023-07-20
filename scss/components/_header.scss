@@ -24,61 +24,8 @@ header {
 
 
 
-// .mover {
-//     @include inline;
-//     @include flex2;
-//     align-items: end;
-//     width: 20%;
-
-//     @include desktop {
-//         @include flex2;
-//         padding: 1em;
-//     }
-
-//     @include tablet {
-//         @include flexbox;
-//         padding: 1em;
-//     }
-
-//     @include mobile {
-//         @include flex2;
-//         gap: 2rem;
-//     }
-
-
-//     .bi-cart-fill {
-//         @include inline;
-//         width: 20%;
-//         height: 20%;
-//         color: $color-fondox2-letras;
-
-//         @include desktop {
-//             @include inline;
-//         }
-
-//         @include tablet {
-//             @include flexbox;
-//         }
-
-//         @include mobile {
-//             @include flexbox;
-//             padding: 0.5rem;
-//             color: $color-fondox2-letras;
-//         }
-
-//         &:hover {
-//             color: #454545;
-//         }
-//     }
-
-
-// }
-
-
 .top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexbox;
     justify-content: space-between;
     background-color: $color-fondo-letras;
     background: linear-gradient $color-fondo-letras;
@@ -87,26 +34,25 @@ header {
     padding: 1em;
     padding-left: 37%;
 
-    @include desktop{
+    @include desktop {
         width: 100%;
         display: flex;
         padding-left: 29%;
     }
 
-    @include tablet{
+    @include tablet {
         width: 100%;
         display: flex;
         padding-left: 17%;
     }
 
-    @include mobile{
+    @include mobile {
         padding-left: 3%;
     }
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
+    @include flexbox;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -215,15 +161,12 @@ header {
 
 
 
-a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+a {
+    @include flexbox;
     font-family: lalo;
     color: $color-fondox2-letras;
 
-    &:hover{
+    &:hover {
         color: #454545;
     }
 }
