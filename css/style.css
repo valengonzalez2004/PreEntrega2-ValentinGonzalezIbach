@@ -780,7 +780,7 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .malbec-venta {
-    padding: 0em;
+    padding: 1.2rem;
     gap: 2rem;
   }
 }
@@ -1132,7 +1132,7 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .espumantes-venta {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 }
 .espumantes-venta .fila-alambrado {
@@ -1489,7 +1489,7 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .blend-venta {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 }
 .blend-venta .foto-blend2 {
