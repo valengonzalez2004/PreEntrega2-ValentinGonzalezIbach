@@ -100,13 +100,13 @@ footer h2{
 
 
 @mixin mobile {
-    @media (min-width: 360px) and (max-width: 420px){
+    @media (min-width: 320px) and (max-width: 767px){
         @content;
     }
 }
 
 @mixin tablet {
-    @media (max-width:768px){
+    @media (min-width:768px) and (max-width:1023px){
         @content;
     }
 }
