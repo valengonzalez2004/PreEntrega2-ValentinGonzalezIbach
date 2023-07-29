@@ -322,7 +322,8 @@ footer h2 {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  padding-left: 15%;
   gap: 5rem;
 }
 @media (max-width: 1200px) {
@@ -332,7 +333,7 @@ footer h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0;
+    padding-right: 15%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -352,7 +353,7 @@ footer h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2.5rem;
+    padding: 1rem;
   }
 }
 .promos .foto {
@@ -485,7 +486,6 @@ a {
 }
 
 .noticia {
-  background-image: url(../../images/uvas2.jpg);
   background-size: 100%;
   width: 100%;
   display: inline-block;
@@ -512,29 +512,43 @@ a {
   .noticia {
     width: 100%;
     height: 100%;
-    background-image: url(../../images/uvas.jpg);
   }
 }
-.noticia .letras {
-  padding-top: 2.5rem;
-}
-.noticia .letras h2 {
-  color: #e5e5e5;
-  padding: 0;
+.noticia .titulon {
+  color: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1200px) {
-  .noticia .letras {
-    padding: 0rem;
-    padding-top: 0;
+  .noticia .titulon {
+    block-size: 10%;
   }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .noticia .titulon {
+    block-size: 10%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .noticia .titulon {
+    block-size: 10%;
+  }
+}
+.noticia .titulon .imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .ellos {
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 25%;
-  gap: 4rem;
-  padding: 2em;
+  gap: 2rem;
+  padding: 1em;
 }
 @media (max-width: 1200px) {
   .ellos {
@@ -564,12 +578,11 @@ a {
   }
 }
 .ellos .parrafop {
-  color: #e5e5e5;
+  color: #111111;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem;
 }
 @media (max-width: 1200px) {
   .ellos .parrafop {
@@ -577,8 +590,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-top: 1.7rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -591,34 +602,6 @@ a {
   .ellos .parrafop {
     font-size: 90%;
     padding: 0.5em;
-  }
-}
-
-.parrafopotro {
-  color: #e5e5e5;
-  padding-top: 1rem;
-}
-
-.imagen {
-  padding: 3rem;
-}
-@media (max-width: 1200px) {
-  .imagen {
-    padding-top: 8rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .imagen {
-    padding: 0;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .imagen {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -793,7 +776,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .malbec-venta {
@@ -2020,4 +2003,4 @@ h1 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.map */

@@ -1,14 +1,13 @@
 .promos {
     @include flexbox;
     justify-content: space-around;
-    width: 80%;
-    padding-left: 15%;
+    width: 100%;
     gap: 5rem;
 
     @include desktop{
         @include flexbox;
         width: 100%;
-        padding-right: 15%; 
+        padding: 0; 
     }
 
     @include tablet{
@@ -20,7 +19,7 @@
     @include mobile {
         @include flex2;
         width: 100%;
-        padding: 1rem;
+        padding: 2.5rem;
     }
 
 
