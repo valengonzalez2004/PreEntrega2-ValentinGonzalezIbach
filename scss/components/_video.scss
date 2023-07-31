@@ -1,24 +1,29 @@
 
 
 .noticia-2{
-    // background-color: $color-fondo-letras;
     background-size: 100%;
     color: $color-fondo-letras;
     width: 80%;
+    gap: 9rem;
+    @include grid;
 
         @include desktop{
             width: 100%;
             padding: 0.5em;
+            width: 80%;
         }
 
         @include tablet{
+        @include flex2;
         width: 100%;
-        padding: 0.5em;
+        gap: 0.2rem;
+        padding: 0.2em;
         }
 
         @include mobile{
             width: 100%;
-            padding: 0.5em;
+            gap: 0.3em;
+            @include flex2;
         }
 
 
@@ -30,7 +35,16 @@
 
 .play{
     @include flexbox;
-    width: 80%;
+    width: 600px;
+
+    @include desktop{
+        @include flex2
+    }
+
+    @include tablet{
+        @include flexbox;
+        width: 90%;
+    }
 
     @include mobile{
         width: 100%;
@@ -40,6 +54,11 @@
 
 .parrafop-2{
     color: $color-fondo-letras;
-    padding: 2em;
+    text-align: center;
+    padding: 2rem;
+
+    @include tablet{
+        padding: 4rem;
+    }
 }
 

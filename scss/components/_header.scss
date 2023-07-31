@@ -16,9 +16,7 @@ header {
 
     .logoo-png {
         @include flexbox;
-        height: 170px;
-        width: 150px;
-
+        padding: 1rem;
     }
 }
 
@@ -26,28 +24,20 @@ header {
 
 .top-nav {
     @include flexbox;
-    justify-content: space-between;
     background-color: $color-fondo-letras;
     background: linear-gradient $color-fondo-letras;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 50px;
-    padding: 1em;
-    padding-left: 37%;
 
     @include desktop {
         width: 100%;
-        display: flex;
-        padding-left: 29%;
     }
 
     @include tablet {
         width: 100%;
-        display: flex;
-        padding-left: 17%;
     }
 
     @include mobile {
-        padding-left: 3%;
+        padding-right: 80%;
     }
 }
 
@@ -68,7 +58,7 @@ header {
     height: 100%;
     width: 30px;
     cursor: pointer;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -122,7 +112,7 @@ header {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 220px;
+        margin-top: 160px;
         left: 0;
         flex-direction: column;
         width: 100%;
