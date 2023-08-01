@@ -1,6 +1,44 @@
-h1 {
-    @include flexbox;
-    padding: 3rem;
+.blend {
+    width: 100%;
+    padding-left: 40%;
+
+    @include tablet{
+        justify-content: start;
+        padding: 2rem;
+    }
+
+    @include mobile{
+        justify-content: start;
+        padding: 1rem;
+    }
+}
+
+.precios {
+    color: $color-fondo-letras;
+    width: 100%;
+    display: flex;
+    padding: 2.8rem;
+    justify-content: end;
+
+    @include tablet{
+        padding: 2rem;
+        @include flex2;
+    }
+
+    @include mobile{
+        padding: 1rem;
+        @include flex2;
+    }
+
+}
+
+.juntos{
+    @include inline;
+
+    @include mobile{
+        gap: 0;
+        padding: 0;
+    }
 }
 
 
