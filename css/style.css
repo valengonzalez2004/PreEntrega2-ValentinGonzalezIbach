@@ -58,6 +58,10 @@ footer h2 {
 header {
   color: #111111;
   background-color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1200px) {
   header {
@@ -72,21 +76,23 @@ header {
 @media (min-width: 320px) and (max-width: 767px) {
   header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 header .logoo-png {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  header .logoo-png {
+    width: 100%;
+  }
 }
 
 .top-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding-top: 30px;
   background-color: #e5e5e5;
   background: linear-gradient #e5e5e5;
   height: 50px;
@@ -104,6 +110,7 @@ header .logoo-png {
 @media (min-width: 320px) and (max-width: 767px) {
   .top-nav {
     padding-right: 80%;
+    padding-top: 0;
   }
 }
 
@@ -130,6 +137,7 @@ header .logoo-png {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 #menu-toggle {
@@ -179,7 +187,7 @@ header .logoo-png {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 160px;
+    margin-top: 170px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -807,13 +815,11 @@ section h2 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .malbec {
-    justify-content: start;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .malbec {
-    justify-content: start;
     padding: 1rem;
   }
 }
@@ -821,9 +827,20 @@ section h2 {
 .precios {
   color: #e5e5e5;
   width: 100%;
-  display: flex;
   padding: 2.8rem;
-  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .precios {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .precios {
@@ -848,6 +865,14 @@ section h2 {
   display: inline-block;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .juntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .juntos {
@@ -1206,13 +1231,11 @@ div .otro-largo-2 .filas-malbec {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .espumantes {
-    justify-content: start;
     padding: 1rem;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .espumantes {
-    justify-content: start;
     padding: 1rem;
   }
 }
@@ -1220,9 +1243,11 @@ div .otro-largo-2 .filas-malbec {
 .precios {
   color: #e5e5e5;
   width: 100%;
-  display: flex;
   padding: 2.8rem;
-  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .precios {
@@ -1248,8 +1273,21 @@ div .otro-largo-2 .filas-malbec {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .juntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .juntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0;
     padding: 0;
   }
@@ -1610,13 +1648,11 @@ footer h2 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .blend {
-    justify-content: start;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .blend {
-    justify-content: start;
     padding: 1rem;
   }
 }
@@ -1624,9 +1660,11 @@ footer h2 {
 .precios {
   color: #e5e5e5;
   width: 100%;
-  display: flex;
   padding: 2.8rem;
-  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .precios {
@@ -1651,6 +1689,15 @@ footer h2 {
   display: inline-block;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .juntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .juntos {
