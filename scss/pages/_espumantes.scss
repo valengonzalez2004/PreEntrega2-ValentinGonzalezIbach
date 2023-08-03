@@ -211,6 +211,15 @@ div .otro-largo-espumante {
         color: $color-fondo-letras;
         @include flexbox;
         justify-content: right;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
+
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
 
         @include desktop{
             width: 100%;
@@ -236,8 +245,17 @@ div .otro-largo-espumante {
 
     .espumantes-boton-2 {
         background-color: $color-fondox2-letras;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
         @include flexbox;
         color: $color-fondo-letras;
+
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
 
         @include desktop{
             width: 100%;

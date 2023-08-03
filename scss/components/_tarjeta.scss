@@ -95,13 +95,23 @@ div .largo {
         }
     }
 
+
     .expansion {
         @include flexbox;
 
         .boton {
             background-color: $color-fondox2-letras;
             color: $color-fondo-letras;
+            border-radius: 9px;
+            font-size: 12px;
+            opacity: 82%;
+            padding: 0.5rem;
             @include flexbox;
+
+            &:hover{
+                background-color: $color-fondo-letras;
+                color: $color-fondox2-letras;
+            }
 
         }
     }
@@ -111,7 +121,17 @@ div .largo {
 
         .boton-2 {
             background-color: $color-fondox2-letras;
+            border-radius: 9px;
+            font-size: 12px;
+            opacity: 82%;
+            padding: 0.5rem;
             color: $color-fondo-letras;
+            @include flexbox;
+
+            &:hover{
+                background-color: $color-fondo-letras;
+                color: $color-fondox2-letras;
+            }
         }
     }
 
@@ -120,7 +140,18 @@ div .largo {
 
         .boton-3 {
             background-color: $color-fondox2-letras;
+            border-radius: 9px;
+            font-size: 12px;
+            opacity: 82%;
+            padding: 0.5rem;
             color: $color-fondo-letras;
+            @include flexbox;
+
+            &:hover{
+                background-color: $color-fondo-letras;
+                color: $color-fondox2-letras;
+            }
+
         }
     }
 

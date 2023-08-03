@@ -11,6 +11,7 @@
     }
 }
 
+
 .precios {
     color: $color-fondo-letras;
     width: 100%;
@@ -164,18 +165,17 @@ div .otro-largo {
     font-family: lato sans-serif;
     width: 100%;
 
+    .card-title2 {
+        color: $color-fondox2-letras;
+        text-align: center;
+        width: 100%;
+    
     .card-text2 {
         color: $color-fondox2-letras;
 
-
-        &-title2 {
-            color: $color-fondox2-letras;
-
-            text-align: center;
-            width: 100%;
-
             @include desktop {
                 width: 100%;
+                padding: 3rem;
             }
 
             @include tablet {
@@ -199,6 +199,15 @@ div .otro-largo {
         color: $color-fondo-letras;
         @include flexbox;
         justify-content: right;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
+
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
 
         @include desktop {
             width: 100%;
@@ -225,6 +234,15 @@ div .otro-largo {
         background-color: $color-fondox2-letras;
         @include flexbox;
         color: $color-fondo-letras;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
+
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
 
         @include desktop {
             width: 100%;
@@ -275,6 +293,7 @@ div .otro-largo {
 
 .uno{
     @include flexbox;
+    padding: 1rem;
     width: 100%;
 }
 

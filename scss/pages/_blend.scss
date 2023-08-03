@@ -127,6 +127,15 @@ div .otro-largo {
         color: $color-fondo-letras;
         @include flexbox;
         justify-content: right;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
+
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
 
     }
 }
@@ -139,7 +148,15 @@ div .otro-largo {
         background-color: $color-fondox2-letras;
         @include flexbox;
         color: $color-fondo-letras;
+        border-radius: 9px;
+        font-size: 12px;
+        opacity: 82%;
+        padding: 0.5rem;
 
+        &:hover{
+            background-color: $color-fondo-letras;
+            color: $color-fondox2-letras;
+        }
     }
 }
 

@@ -100,7 +100,14 @@ footer h2{
     color: $color-fondox2-letras;
 }
 
-
+.letra {
+    
+    font-family: lalo;
+    color: $color-fondox2-letras;
+    &:hover {
+        color: #023047;
+    }
+}
 
 
 .uno {

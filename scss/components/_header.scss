@@ -2,7 +2,9 @@ header {
     color: $color-fondox2-letras;
     background-color: $color-fondo-letras;
     @include flexbox;
-    
+    justify-content: space-between;
+    padding: 0.5rem;
+
 
     @include desktop {
         width: 100%;
@@ -19,6 +21,7 @@ header {
 
     .logoo-png {
         padding: 1rem;
+        @include flexbox;
 
         @include mobile{
             width: 100%;
@@ -27,10 +30,15 @@ header {
     }
 }
 
-
+.busqueda{
+    border-radius: 19px;
+    padding: 0.1rem;
+    color: #023047;
+    
+}
 
 .top-nav {
-    padding-top: 30px;
+    padding-top: 24px;
     background-color: $color-fondo-letras;
     background: linear-gradient $color-fondo-letras;
     height: 50px;
@@ -160,12 +168,3 @@ header {
 
 
 
-a {
-    @include flexbox;
-    font-family: lalo;
-    color: $color-fondox2-letras;
-
-    &:hover {
-        color: #454545;
-    }
-}

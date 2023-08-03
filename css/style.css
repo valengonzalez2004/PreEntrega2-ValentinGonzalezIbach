@@ -48,6 +48,14 @@ footer h2 {
   color: #111111;
 }
 
+.letra {
+  font-family: lalo;
+  color: #111111;
+}
+.letra:hover {
+  color: #023047;
+}
+
 .uno {
   display: flex;
   flex-direction: row;
@@ -62,6 +70,8 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 @media (max-width: 1200px) {
   header {
@@ -84,6 +94,10 @@ header {
 }
 header .logoo-png {
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   header .logoo-png {
@@ -91,8 +105,14 @@ header .logoo-png {
   }
 }
 
+.busqueda {
+  border-radius: 19px;
+  padding: 0.1rem;
+  color: #023047;
+}
+
 .top-nav {
-  padding-top: 30px;
+  padding-top: 24px;
   background-color: #e5e5e5;
   background: linear-gradient #e5e5e5;
   height: 50px;
@@ -219,18 +239,6 @@ header .logoo-png {
     border-bottom: 1px solid #444;
   }
 }
-a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: lalo;
-  color: #111111;
-}
-a:hover {
-  color: #454545;
-}
-
 footer {
   background-color: #e5e5e5;
 }
@@ -419,10 +427,18 @@ div .largo .fila1:hover {
 .expansion .boton {
   background-color: #111111;
   color: #e5e5e5;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.expansion .boton:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 
 .expansion-2 {
@@ -433,7 +449,19 @@ div .largo .fila1:hover {
 }
 .expansion-2 .boton-2 {
   background-color: #111111;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
   color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expansion-2 .boton-2:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 
 .expansion-3 {
@@ -444,7 +472,19 @@ div .largo .fila1:hover {
 }
 .expansion-3 .boton-3 {
   background-color: #111111;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
   color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.expansion-3 .boton-3:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 
 .card-text {
@@ -1005,26 +1045,27 @@ div .otro-largo-2 .filas-malbec {
   font-family: lato sans-serif;
   width: 100%;
 }
-.card-body2 .card-text2 {
-  color: #111111;
-}
-.card-body2 .card-text2-title2 {
+.card-body2 .card-title2 {
   color: #111111;
   text-align: center;
   width: 100%;
 }
+.card-body2 .card-title2 .card-text2 {
+  color: #111111;
+}
 @media (max-width: 1200px) {
-  .card-body2 .card-text2-title2 {
+  .card-body2 .card-title2 .card-text2 {
     width: 100%;
+    padding: 3rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .card-body2 .card-text2-title2 {
+  .card-body2 .card-title2 .card-text2 {
     width: 100%;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .card-body2 .card-text2-title2 {
+  .card-body2 .card-title2 .card-text2 {
     width: 100%;
   }
 }
@@ -1044,6 +1085,14 @@ div .otro-largo-2 .filas-malbec {
   justify-content: center;
   align-items: center;
   justify-content: right;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
+}
+.malbec-expansion .malbec-boton:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 @media (max-width: 1200px) {
   .malbec-expansion .malbec-boton {
@@ -1078,6 +1127,14 @@ div .otro-largo-2 .filas-malbec {
   justify-content: center;
   align-items: center;
   color: #e5e5e5;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
+}
+.malbec-expansion-2 .malbec-boton-2:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 @media (max-width: 1200px) {
   .malbec-expansion-2 .malbec-boton-2 {
@@ -1136,6 +1193,7 @@ div .otro-largo-2 .filas-malbec {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1472,6 +1530,14 @@ div .otro-largo-espumante-2 .filas-espumantes {
   justify-content: center;
   align-items: center;
   justify-content: right;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
+}
+.espumantes-expansion .espumantes-boton:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 @media (max-width: 1200px) {
   .espumantes-expansion .espumantes-boton {
@@ -1501,11 +1567,19 @@ div .otro-largo-espumante-2 .filas-espumantes {
 }
 .espumantes-expansion-2 .espumantes-boton-2 {
   background-color: #111111;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #e5e5e5;
+}
+.espumantes-expansion-2 .espumantes-boton-2:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 @media (max-width: 1200px) {
   .espumantes-expansion-2 .espumantes-boton-2 {
@@ -1797,6 +1871,14 @@ div .otro-largo-2 .filas-blend {
   justify-content: center;
   align-items: center;
   justify-content: right;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
+}
+.blend-expansion .blend-boton:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 
 .blend-expansion-2 {
@@ -1813,6 +1895,14 @@ div .otro-largo-2 .filas-blend {
   justify-content: center;
   align-items: center;
   color: #e5e5e5;
+  border-radius: 9px;
+  font-size: 12px;
+  opacity: 82%;
+  padding: 0.5rem;
+}
+.blend-expansion-2 .blend-boton-2:hover {
+  background-color: #e5e5e5;
+  color: #111111;
 }
 
 .tres-blend {
