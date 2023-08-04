@@ -112,7 +112,7 @@ header .logoo-png {
 }
 
 .top-nav {
-  padding-top: 24px;
+  padding-top: 38px;
   background-color: #e5e5e5;
   background: linear-gradient #e5e5e5;
   height: 50px;
@@ -207,7 +207,7 @@ header .logoo-png {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 170px;
+    margin-top: 191px;
     left: 0;
     flex-direction: column;
     width: 100%;

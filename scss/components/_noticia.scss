@@ -86,7 +86,7 @@
     .parrafop{
         color: $color-fondo-letras;
         width: 100%;
-        // text-align: center;
+
 
             @include desktop{
                 @include flex2;
@@ -121,8 +121,6 @@
 .imagen{
     width: 290px;
     padding: 1rem;
-
-    
 
     @include desktop{
     }
